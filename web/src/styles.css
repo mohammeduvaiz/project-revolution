@@ -1,0 +1,51 @@
+:root {
+  --ink: #0b1622;
+  --ink-raised: #122233;
+  --teal: #2dd4bf;
+  --turmeric: #f5b82e;
+  --text: #f4efe6;
+  --label: #8fa3b5;
+  --border: rgba(143, 163, 181, 0.35);
+  --font-body: "Manrope", "Noto Sans Malayalam", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", "Noto Sans Malayalam", ui-monospace, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at 15% 0%, rgba(45, 212, 191, 0.12), transparent 45%),
+    radial-gradient(circle at 90% 60%, rgba(245, 184, 46, 0.07), transparent 40%), var(--ink);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+.page { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+.eyebrow { font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--label); margin: 0 0 8px; }
+.eyebrow b { color: var(--teal); font-weight: 500; }
+h1 { font-size: clamp(32px, 7vw, 48px); line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 12px; font-weight: 800; }
+.lede { color: var(--label); font-size: 17px; line-height: 1.5; margin: 0 0 32px; }
+.list { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+.card {
+  display: grid; grid-template-columns: auto 1fr auto; gap: 18px; align-items: center;
+  padding: 20px; border: 2px solid var(--border); border-radius: 20px; background: var(--ink-raised);
+  text-decoration: none; transition: border-color 0.15s;
+}
+.card:hover, .card:focus-visible { border-color: var(--turmeric); outline: none; }
+.card-num { font-family: var(--font-mono); color: var(--teal); font-size: 15px; }
+.card-title { font-weight: 700; font-size: 19px; margin: 0 0 4px; }
+.card-desc { color: var(--label); font-size: 15px; line-height: 1.45; margin: 0; }
+.card-time { font-family: var(--font-mono); color: var(--label); font-size: 14px; white-space: nowrap; }
+.back { display: inline-block; font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.1em; color: var(--label); text-decoration: none; margin-bottom: 20px; }
+.back:hover { color: var(--text); }
+.player {
+  display: block; width: 100%; max-width: 420px; aspect-ratio: 9 / 16; margin: 0 auto 28px;
+  border-radius: 20px; background: #000; border: 2px solid var(--border);
+}
+.summary { font-size: 17px; line-height: 1.6; margin: 0 0 32px; }
+.next { display: block; padding: 18px 20px; border: 2px solid var(--border); border-radius: 20px; text-decoration: none; }
+.next:hover { border-color: var(--turmeric); }
+.next span { display: block; }
+.next .eyebrow { margin-bottom: 4px; }
+.muted { color: var(--label); }

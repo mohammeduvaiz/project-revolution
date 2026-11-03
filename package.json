@@ -1,0 +1,24 @@
+{
+  "name": "edutech",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "video",
+    "web"
+  ],
+  "scripts": {
+    "voice": "tsx --env-file=.env scripts/generate-voice.ts",
+    "studio": "npm run studio -w video",
+    "render": "tsx scripts/render.ts",
+    "index": "tsx scripts/build-index.ts",
+    "web": "npm run dev -w web --",
+    "typecheck": "tsc --noEmit -p . && npm run typecheck -w video && npm run typecheck -w web"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "music-metadata": "^12.3.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "zod": "^4.6.7"
+  }
+}

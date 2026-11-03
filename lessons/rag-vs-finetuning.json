@@ -1,0 +1,385 @@
+{
+  "slug": "rag-vs-finetuning",
+  "title": "RAG vs Fine-Tuning",
+  "description": "Two ways to give an AI model new information, and when to pick each.",
+  "summary": "RAG leaves the model unchanged: for every question it fetches relevant documents and adds them to the prompt, so updating the documents updates the answers. Fine-Tuning trains the model further on examples, changing its weights, which suits a consistent style or format but needs retraining to add new facts. For facts that change often, like a college office's exam dates, start with RAG.",
+  "language": "ml-IN",
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "hook",
+      "label": "QUESTION",
+      "headline": "RAG or Fine-Tuning?",
+      "caption": "Two ways to add new knowledge",
+      "narration": "ഒരു AI model-ന് പുതിയ information കൊടുക്കാൻ രണ്ട് വഴികളുണ്ട്. RAG, അല്ലെങ്കിൽ Fine-Tuning. ഏതാണ് നിങ്ങൾക്ക് വേണ്ടത്?",
+      "visual": {
+        "nodes": [
+          {
+            "id": "model",
+            "col": 1,
+            "row": 0,
+            "icon": "model",
+            "label": "AI model",
+            "cue": "AI model"
+          },
+          {
+            "id": "info",
+            "col": 1,
+            "row": 2,
+            "icon": "doc",
+            "label": "New info",
+            "cue": "information"
+          },
+          {
+            "id": "rag",
+            "col": 0,
+            "row": 1,
+            "icon": "search",
+            "label": "RAG",
+            "cue": "RAG",
+            "highlightCue": "ഏതാണ്"
+          },
+          {
+            "id": "ft",
+            "col": 2,
+            "row": 1,
+            "icon": "weights",
+            "label": "Fine-Tuning",
+            "cue": "Fine-Tuning",
+            "highlightCue": "ഏതാണ്"
+          }
+        ],
+        "edges": [
+          {
+            "from": "info",
+            "to": "rag",
+            "cue": "RAG",
+            "flowCue": "ഏതാണ്"
+          },
+          {
+            "from": "rag",
+            "to": "model",
+            "cue": "RAG",
+            "flowCue": "ഏതാണ്"
+          },
+          {
+            "from": "info",
+            "to": "ft",
+            "cue": "Fine-Tuning",
+            "flowCue": "ഏതാണ്"
+          },
+          {
+            "from": "ft",
+            "to": "model",
+            "cue": "Fine-Tuning",
+            "flowCue": "ഏതാണ്"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s2",
+      "type": "concept",
+      "label": "RAG",
+      "headline": "Look it up, then answer",
+      "caption": "Retrieval-Augmented Generation",
+      "narration": "RAG-ൽ model-നെ മാറ്റുന്നില്ല. ഒരു ചോദ്യം വരുമ്പോൾ, ബന്ധപ്പെട്ട documents ആദ്യം search ചെയ്ത് എടുക്കും. ആ text കൂടി prompt-ൽ ചേർത്ത് model-ന് കൊടുക്കും. അത് നോക്കിയാണ് answer ഉണ്ടാക്കുന്നത്.",
+      "visual": {
+        "nodes": [
+          {
+            "id": "question",
+            "col": 0,
+            "row": 0,
+            "icon": "question",
+            "label": "Question",
+            "cue": "ചോദ്യം"
+          },
+          {
+            "id": "search",
+            "col": 1,
+            "row": 0,
+            "icon": "search",
+            "label": "Search",
+            "cue": "search",
+            "highlightCue": "search"
+          },
+          {
+            "id": "docs",
+            "col": 2,
+            "row": 0,
+            "icon": "docs",
+            "label": "Documents",
+            "cue": "documents"
+          },
+          {
+            "id": "prompt",
+            "col": 1,
+            "row": 1,
+            "icon": "prompt",
+            "label": "Prompt + docs",
+            "cue": "prompt"
+          },
+          {
+            "id": "model",
+            "col": 0,
+            "row": 2,
+            "icon": "model",
+            "label": "Same model",
+            "cue": "model-നെ",
+            "highlightCue": "model-ന് കൊടുക്കും"
+          },
+          {
+            "id": "answer",
+            "col": 2,
+            "row": 2,
+            "icon": "answer",
+            "label": "Answer",
+            "cue": "answer",
+            "highlightCue": "answer"
+          }
+        ],
+        "edges": [
+          {
+            "from": "question",
+            "to": "search",
+            "cue": "search",
+            "flowCue": "search"
+          },
+          {
+            "from": "docs",
+            "to": "search",
+            "cue": "search",
+            "flowCue": "എടുക്കും"
+          },
+          {
+            "from": "search",
+            "to": "prompt",
+            "cue": "prompt",
+            "flowCue": "prompt"
+          },
+          {
+            "from": "prompt",
+            "to": "model",
+            "cue": "model-ന് കൊടുക്കും",
+            "flowCue": "model-ന് കൊടുക്കും"
+          },
+          {
+            "from": "model",
+            "to": "answer",
+            "cue": "answer",
+            "flowCue": "answer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s3",
+      "type": "concept",
+      "label": "FINE-TUNING",
+      "headline": "Train it on examples",
+      "caption": "New examples → new weights",
+      "narration": "Fine-Tuning-ൽ model-നെ തന്നെ മാറ്റുന്നു. നൂറുകണക്കിന് examples വെച്ച്, കുറച്ചുകൂടി training കൊടുക്കും. അപ്പോൾ model-ന്റെ weights മാറും. അങ്ങനെ ഒരു പ്രത്യേക style-ൽ, format-ൽ answer തരാൻ തുടങ്ങും.",
+      "visual": {
+        "nodes": [
+          {
+            "id": "examples",
+            "col": 0,
+            "row": 0,
+            "icon": "examples",
+            "label": "Examples",
+            "cue": "examples"
+          },
+          {
+            "id": "model",
+            "col": 1,
+            "row": 1,
+            "icon": "weights",
+            "label": "Model weights",
+            "cue": "model-നെ",
+            "highlightCue": "weights"
+          },
+          {
+            "id": "answer",
+            "col": 2,
+            "row": 2,
+            "icon": "answer",
+            "label": "Styled answer",
+            "cue": "answer",
+            "highlightCue": "answer"
+          }
+        ],
+        "edges": [
+          {
+            "from": "examples",
+            "to": "model",
+            "cue": "training",
+            "flowCue": "training"
+          },
+          {
+            "from": "model",
+            "to": "answer",
+            "cue": "answer",
+            "flowCue": "answer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s4",
+      "type": "compare",
+      "label": "KEY DIFFERENCE",
+      "caption": "Facts → RAG · Style → Fine-Tuning",
+      "left": {
+        "title": "RAG",
+        "points": [
+          "Model unchanged",
+          "Update docs anytime",
+          "Best for facts"
+        ]
+      },
+      "right": {
+        "title": "Fine-Tuning",
+        "points": [
+          "Weights change",
+          "Retrain to update",
+          "Best for style"
+        ]
+      },
+      "narration": "ചുരുക്കി പറഞ്ഞാൽ, RAG പുറത്തുനിന്ന് information എടുത്ത് കൊടുക്കുന്നു. Documents മാറിയാൽ, അവ update ചെയ്താൽ മതി. Fine-Tuning, model-ന്റെ പെരുമാറ്റം തന്നെ മാറ്റുന്നു. പുതിയ കാര്യം ചേർക്കാൻ വീണ്ടും train ചെയ്യണം."
+    },
+    {
+      "id": "s5",
+      "type": "concept",
+      "label": "EXAMPLE",
+      "headline": "College office chatbot",
+      "caption": "New circular? Just update the docs",
+      "narration": "ഒരു college office chatbot ആലോചിക്കൂ. Exam dates-ഉം fee details-ഉം എല്ലാ semester-ഉം മാറും. അതിന് RAG ആണ് നല്ലത്. പുതിയ circular, PDF ആയി ചേർത്താൽ, chatbot പുതിയ answer തരും.",
+      "visual": {
+        "nodes": [
+          {
+            "id": "ask",
+            "col": 0,
+            "row": 0,
+            "text": "Exam date?",
+            "cue": "Exam dates"
+          },
+          {
+            "id": "bot",
+            "col": 1,
+            "row": 0,
+            "icon": "chatbot",
+            "label": "Chatbot",
+            "cue": "chatbot"
+          },
+          {
+            "id": "docs",
+            "col": 2,
+            "row": 0,
+            "icon": "docs",
+            "label": "Docs",
+            "cue": "RAG",
+            "highlightCue": "ചേർത്താൽ"
+          },
+          {
+            "id": "pdf",
+            "col": 2,
+            "row": 1,
+            "icon": "pdf",
+            "label": "New circular",
+            "cue": "circular"
+          },
+          {
+            "id": "reply",
+            "col": 1,
+            "row": 1,
+            "text": "March 20",
+            "cue": "പുതിയ answer",
+            "highlightCue": "പുതിയ answer"
+          }
+        ],
+        "edges": [
+          {
+            "from": "ask",
+            "to": "bot",
+            "cue": "Exam dates"
+          },
+          {
+            "from": "docs",
+            "to": "bot",
+            "cue": "RAG",
+            "flowCue": "chatbot പുതിയ"
+          },
+          {
+            "from": "pdf",
+            "to": "docs",
+            "cue": "ചേർത്താൽ",
+            "flowCue": "ചേർത്താൽ"
+          },
+          {
+            "from": "bot",
+            "to": "reply",
+            "cue": "പുതിയ answer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s6",
+      "type": "takeaway",
+      "label": "REMEMBER",
+      "headline": "Facts: RAG.\nStyle: Fine-Tuning.",
+      "caption": "Changing facts? Start with RAG.",
+      "narration": "മാറിക്കൊണ്ടിരിക്കുന്ന facts-ന്, RAG. സ്ഥിരമായ ഒരു style വേണമെങ്കിൽ, Fine-Tuning.",
+      "visual": {
+        "nodes": [
+          {
+            "id": "facts",
+            "col": 0,
+            "row": 0,
+            "icon": "docs",
+            "label": "Changing facts",
+            "cue": "facts"
+          },
+          {
+            "id": "rag",
+            "col": 2,
+            "row": 0,
+            "icon": "search",
+            "label": "RAG",
+            "cue": "RAG",
+            "highlightCue": "RAG"
+          },
+          {
+            "id": "style",
+            "col": 0,
+            "row": 1,
+            "icon": "examples",
+            "label": "Fixed style",
+            "cue": "style"
+          },
+          {
+            "id": "ft",
+            "col": 2,
+            "row": 1,
+            "icon": "weights",
+            "label": "Fine-Tuning",
+            "cue": "Fine-Tuning",
+            "highlightCue": "Fine-Tuning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "facts",
+            "to": "rag",
+            "flowCue": "RAG"
+          },
+          {
+            "from": "style",
+            "to": "ft",
+            "flowCue": "Fine-Tuning"
+          }
+        ]
+      }
+    }
+  ]
+}

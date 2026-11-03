@@ -1,0 +1,10 @@
+node_modules/
+.env
+# Generated during authoring (rebuild with npm run voice / render)
+video/public/audio/
+video/public/lessons/
+out/
+dist/
+.DS_Store
+# Published output IS committed so the site deploys from git:
+#   web/public/videos/*.mp4, web/public/lessons.json

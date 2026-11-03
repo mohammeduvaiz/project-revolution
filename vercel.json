@@ -1,0 +1,5 @@
+{
+  "installCommand": "npm ci --workspace=web",
+  "buildCommand": "npm run build -w web",
+  "outputDirectory": "web/dist"
+}
