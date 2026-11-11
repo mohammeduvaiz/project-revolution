@@ -1,0 +1,80 @@
+{
+  "topicId": "PIC-2-05",
+  "title": "Bubble sort",
+  "language": "ml-IN",
+  "example": "Lining up students by height for the school assembly by swapping neighbours",
+  "review": { "status": "pending" },
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "hook",
+      "label": "BUBBLE SORT",
+      "headline": "One swap at a time",
+      "caption": "5 3 8 1 → 1 3 5 8",
+      "narration": "ഒരു class-ലെ marks ചെറുതിൽ നിന്ന് വലുതിലേക്ക് ക്രമത്തിൽ ആക്കണം. ഏറ്റവും simple ആയ വഴി ഏതാണ്?"
+    },
+    {
+      "id": "s2",
+      "type": "concept",
+      "label": "BUBBLE SORT",
+      "headline": "Compare neighbours, swap if wrong",
+      "caption": "Largest bubbles to the end",
+      "narration": "അടുത്തടുത്തുള്ള രണ്ട് elements compare ചെയ്യുക. ആദ്യത്തേത് വലുതാണെങ്കിൽ, swap ചെയ്യുക. ഇങ്ങനെ array മുഴുവൻ പോയാൽ, ഏറ്റവും വലിയ element അവസാനമെത്തും. ഇതാണ് bubble sort.",
+      "visual": {
+        "nodes": [
+          { "id": "start", "col": 0, "row": 0, "text": "5  3  8  1", "label": "Start", "cue": "elements" },
+          { "id": "swap", "col": 2, "row": 0, "text": "3  5  8  1", "label": "5 > 3, so swap", "cue": "swap" },
+          { "id": "pass", "col": 1, "row": 1, "text": "3  5  1  8", "label": "After pass 1", "cue": "അവസാനമെത്തും", "highlightCue": "bubble sort" }
+        ],
+        "edges": [
+          { "from": "start", "to": "swap", "cue": "swap", "flowCue": "swap" },
+          { "from": "swap", "to": "pass", "cue": "array", "flowCue": "array" }
+        ]
+      }
+    },
+    {
+      "id": "s3",
+      "type": "example",
+      "label": "EXAMPLE",
+      "setup": "Students lining up by height for the school assembly.",
+      "payoff": "Swap neighbours again and again. The tallest reaches the back first.",
+      "caption": "Each round, the tallest moves back",
+      "narration": "School assembly-ക്ക് കുട്ടികളെ ഉയരം അനുസരിച്ച് നിർത്തണം. Teacher അടുത്തടുത്ത് നിൽക്കുന്ന രണ്ട് പേരെ നോക്കും. മുന്നിലുള്ളയാൾക്ക് ഉയരം കൂടുതലാണെങ്കിൽ, അവരെ മാറ്റി നിർത്തും. ഓരോ round കഴിയുമ്പോഴും, ഏറ്റവും ഉയരമുള്ളയാൾ പുറകിലെത്തും.",
+      "visual": {
+        "nodes": [
+          { "id": "before", "col": 0, "row": 0, "text": "150  140  160", "label": "Heights (cm)", "cue": "ഉയരം അനുസരിച്ച്" },
+          { "id": "after", "col": 2, "row": 0, "text": "140  150  160", "label": "After one swap", "cue": "മാറ്റി" },
+          { "id": "back", "col": 1, "row": 1, "text": "Tallest → back", "label": "Every round", "cue": "round", "highlightCue": "പുറകിലെത്തും" }
+        ],
+        "edges": [
+          { "from": "before", "to": "after", "cue": "മാറ്റി", "flowCue": "മാറ്റി" },
+          { "from": "after", "to": "back", "cue": "round" }
+        ]
+      }
+    },
+    {
+      "id": "s4",
+      "type": "steps",
+      "label": "ALGORITHM",
+      "headline": "Bubble sort, step by step",
+      "items": [
+        "Start at the first element",
+        "Compare it with the next one",
+        "If the first is bigger, swap them",
+        "Move one place right; repeat to the end",
+        "The largest is now last; repeat for the rest",
+        "Stop after n − 1 passes"
+      ],
+      "caption": "n elements → n − 1 passes",
+      "narration": "ആദ്യത്തെ element-ൽ നിന്ന് തുടങ്ങുക. അതിനെ അടുത്തതുമായി compare ചെയ്യുക. ആദ്യത്തേത് വലുതാണെങ്കിൽ swap ചെയ്യുക. ഒരു സ്ഥാനം മുന്നോട്ട് നീങ്ങി, അവസാനം വരെ ആവർത്തിക്കുക. ഇപ്പോൾ ഏറ്റവും വലുത് അവസാനമാണ്, ബാക്കിക്ക് വീണ്ടും ചെയ്യുക. n minus 1 passes കഴിഞ്ഞാൽ, array sorted ആയി."
+    },
+    {
+      "id": "s5",
+      "type": "takeaway",
+      "label": "REMEMBER",
+      "headline": "Swap neighbours until sorted",
+      "caption": "Each pass puts the largest last",
+      "narration": "Bubble sort, അടുത്തടുത്തുള്ളവ compare ചെയ്ത്, ആവശ്യമെങ്കിൽ swap ചെയ്യുന്നു. ഓരോ pass-ലും ഏറ്റവും വലുത് അവസാനമെത്തും."
+    }
+  ]
+}

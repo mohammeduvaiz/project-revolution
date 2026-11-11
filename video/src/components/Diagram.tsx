@@ -4,22 +4,22 @@ import { cueFraction, type Cue, type Visual, type VisualEdge, type VisualNode } 
 import { colors, diagram, fonts, layout, timing } from "../theme";
 import { Icon } from "./Icon";
 
-type Props = { visual: Visual; narration: string; audioFrames: number };
+type Props = { visual: Visual; narration: string; audioFrames: number; rowHeight?: number };
 
 const WIDTH = 1080 - layout.sidePadding * 2;
 
 type Point = { x: number; y: number };
 
-const centerOf = (node: VisualNode): Point => ({
+const centerOf = (node: VisualNode, rowHeight: number): Point => ({
   x: ((node.col + 0.5) * WIDTH) / diagram.columns,
-  y: (node.row + 0.5) * diagram.rowHeight,
+  y: (node.row + 0.5) * rowHeight,
 });
 
 /** Converts a cue to a frame inside the scene. */
 const useCueFrame = (narration: string, audioFrames: number) => (value: Cue): number =>
   Math.max(timing.staggerFrames, Math.round(cueFraction(narration, value) * audioFrames) - diagram.cueLeadFrames);
 
-const Node: React.FC<{ node: VisualNode; appearAt: number; highlightAt: number | null; dimAt: number | null }> = ({ node, appearAt, highlightAt, dimAt }) => {
+const Node: React.FC<{ node: VisualNode; rowHeight: number; appearAt: number; highlightAt: number | null; dimAt: number | null }> = ({ node, rowHeight, appearAt, highlightAt, dimAt }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const enter = spring({ frame: frame - appearAt, fps, config: timing.popSpring });
@@ -28,7 +28,7 @@ const Node: React.FC<{ node: VisualNode; appearAt: number; highlightAt: number |
   const pulse = highlighted ? 1 + 0.08 * Math.sin(Math.min(1, bump) * Math.PI) : 1;
   const dim = dimAt === null ? 1 : interpolate(frame, [dimAt, dimAt + 12], [1, diagram.dimOpacity], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const accent = highlighted ? colors.turmeric : colors.label;
-  const c = centerOf(node);
+  const c = centerOf(node, rowHeight);
   const scale = (0.6 + 0.4 * enter) * pulse;
 
   const label = node.label && (
@@ -88,7 +88,7 @@ const Node: React.FC<{ node: VisualNode; appearAt: number; highlightAt: number |
             fontWeight: 700,
             fontSize: diagram.bubbleSize,
             color: colors.text,
-            whiteSpace: "nowrap",
+            whiteSpace: "pre",
           }}
         >
           {node.text}
@@ -119,10 +119,10 @@ const insetAlong = (node: VisualNode, ux: number, uy: number): number => {
   return Math.min(tx, ty) + diagram.edgeGap;
 };
 
-const Edge: React.FC<{ edge: VisualEdge; from: VisualNode; to: VisualNode; drawAt: number; flowAt: number | null }> = ({ from, to, drawAt, flowAt }) => {
+const Edge: React.FC<{ edge: VisualEdge; from: VisualNode; to: VisualNode; rowHeight: number; drawAt: number; flowAt: number | null }> = ({ from, to, rowHeight, drawAt, flowAt }) => {
   const frame = useCurrentFrame();
-  const a = centerOf(from);
-  const b = centerOf(to);
+  const a = centerOf(from, rowHeight);
+  const b = centerOf(to, rowHeight);
   const dx = b.x - a.x;
   const dy = b.y - a.y;
   const dist = Math.hypot(dx, dy);
@@ -179,12 +179,12 @@ const Edge: React.FC<{ edge: VisualEdge; from: VisualNode; to: VisualNode; drawA
 };
 
 /** Nodes and arrows that build up as the narration mentions them. */
-export const Diagram: React.FC<Props> = ({ visual, narration, audioFrames }) => {
+export const Diagram: React.FC<Props> = ({ visual, narration, audioFrames, rowHeight = diagram.rowHeight }) => {
   const toFrame = useCueFrame(narration, audioFrames);
   const appear = new Map(visual.nodes.map((n) => [n.id, toFrame(n.cue)]));
   const byId = new Map(visual.nodes.map((n) => [n.id, n]));
   const rows = Math.max(...visual.nodes.map((n) => n.row)) + 1;
-  const height = rows * diagram.rowHeight;
+  const height = rows * rowHeight;
   return (
     <div style={{ position: "relative", width: WIDTH, height, flexShrink: 0 }}>
       <svg width={WIDTH} height={height} style={{ position: "absolute", inset: 0, overflow: "visible" }}>
@@ -193,13 +193,14 @@ export const Diagram: React.FC<Props> = ({ visual, narration, audioFrames }) => 
           const to = byId.get(edge.to);
           if (!from || !to) return null;
           const drawAt = edge.cue === undefined ? Math.max(appear.get(edge.from) ?? 0, appear.get(edge.to) ?? 0) : toFrame(edge.cue);
-          return <Edge key={i} edge={edge} from={from} to={to} drawAt={drawAt} flowAt={edge.flowCue === undefined ? null : toFrame(edge.flowCue)} />;
+          return <Edge key={i} edge={edge} from={from} to={to} rowHeight={rowHeight} drawAt={drawAt} flowAt={edge.flowCue === undefined ? null : toFrame(edge.flowCue)} />;
         })}
       </svg>
       {visual.nodes.map((node) => (
         <Node
           key={node.id}
           node={node}
+          rowHeight={rowHeight}
           appearAt={appear.get(node.id) ?? 0}
           highlightAt={node.highlightCue === undefined ? null : toFrame(node.highlightCue)}
           dimAt={node.dimCue === undefined ? null : toFrame(node.dimCue)}

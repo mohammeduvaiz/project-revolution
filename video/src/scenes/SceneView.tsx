@@ -3,7 +3,11 @@ import type { Scene } from "../../../shared/lesson-schema";
 import { CompareScene } from "./CompareScene";
 import { ConceptScene } from "./ConceptScene";
 import { FlowScene } from "./FlowScene";
+import { CodeScene } from "./CodeScene";
+import { ExampleScene } from "./ExampleScene";
 import { HookScene } from "./HookScene";
+import { StepsScene } from "./StepsScene";
+import { TableScene } from "./TableScene";
 import type { SceneTimingProps } from "./SceneFrame";
 import { TakeawayScene } from "./TakeawayScene";
 
@@ -20,6 +24,14 @@ export const SceneView: React.FC<Props> = ({ scene, ...t }) => {
       return <FlowScene scene={scene} {...t} />;
     case "compare":
       return <CompareScene scene={scene} {...t} />;
+    case "example":
+      return <ExampleScene scene={scene} {...t} />;
+    case "code":
+      return <CodeScene scene={scene} {...t} />;
+    case "steps":
+      return <StepsScene scene={scene} {...t} />;
+    case "table":
+      return <TableScene scene={scene} {...t} />;
     case "takeaway":
       return <TakeawayScene scene={scene} {...t} />;
     default: {

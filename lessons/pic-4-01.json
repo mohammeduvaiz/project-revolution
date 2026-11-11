@@ -1,0 +1,91 @@
+{
+  "topicId": "PIC-4-01",
+  "title": "What is a pointer?",
+  "language": "ml-IN",
+  "example": "A slip with a friend's house address, versus the house itself",
+  "review": { "status": "pending" },
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "hook",
+      "label": "POINTER",
+      "headline": "Where does x live?",
+      "caption": "Every variable has an address",
+      "narration": "Program-ൽ നമ്മൾ ഉണ്ടാക്കുന്ന ഓരോ variable-ഉം memory-ൽ എവിടെയോ ആണ് ഇരിക്കുന്നത്. ആ സ്ഥലം നമുക്ക് എങ്ങനെ പിടിക്കാം?"
+    },
+    {
+      "id": "s2",
+      "type": "concept",
+      "label": "POINTER",
+      "headline": "Holds an address",
+      "caption": "p stores the address of x",
+      "narration": "ഓരോ variable-നും memory-ൽ ഒരു address ഉണ്ട്. ആ address സൂക്ഷിക്കുന്ന variable ആണ് pointer. അതായത്, pointer-ൽ value അല്ല, address ആണ് ഉള്ളത്.",
+      "visual": {
+        "nodes": [
+          { "id": "x", "col": 0, "row": 0, "text": "x = 10", "label": "Variable x", "cue": "variable-നും" },
+          { "id": "addr", "col": 2, "row": 0, "text": "&x = 1000", "label": "Its address", "cue": "address" },
+          { "id": "p", "col": 1, "row": 1, "text": "p = 1000", "label": "Pointer p", "cue": "സൂക്ഷിക്കുന്ന", "highlightCue": "pointer-ൽ" }
+        ],
+        "edges": [
+          { "from": "x", "to": "addr", "cue": "address" },
+          { "from": "addr", "to": "p", "cue": "സൂക്ഷിക്കുന്ന", "flowCue": "സൂക്ഷിക്കുന്ന" }
+        ]
+      }
+    },
+    {
+      "id": "s3",
+      "type": "example",
+      "label": "EXAMPLE",
+      "setup": "A slip with your friend's address in Thrissur.",
+      "payoff": "The slip isn't the house. It tells you where the house is.",
+      "caption": "Slip → address → house",
+      "narration": "Thrissur-ലുള്ള ഒരു friend-ന്റെ വീട്ടിലേക്ക് പോകണം. കയ്യിൽ ഒരു കടലാസിൽ address മാത്രം ഉണ്ട്. ആ കടലാസ് വീടല്ല, പക്ഷേ വീട് എവിടെയാണെന്ന് പറഞ്ഞുതരും. Pointer-ഉം അതുപോലെയാണ്.",
+      "visual": {
+        "nodes": [
+          { "id": "slip", "col": 0, "row": 0, "icon": "doc", "label": "Address slip", "cue": "കടലാസിൽ" },
+          { "id": "house", "col": 2, "row": 0, "text": "House No. 12", "label": "Friend's house", "cue": "വീട്ടിലേക്ക്", "highlightCue": "പറഞ്ഞുതരും" },
+          { "id": "p", "col": 0, "row": 1, "text": "p", "label": "Pointer", "cue": "Pointer-ഉം" },
+          { "id": "x", "col": 2, "row": 1, "text": "x = 10", "label": "Variable", "cue": "Pointer-ഉം", "highlightCue": "അതുപോലെയാണ്" }
+        ],
+        "edges": [
+          { "from": "slip", "to": "house", "cue": "പറഞ്ഞുതരും", "flowCue": "പറഞ്ഞുതരും" },
+          { "from": "p", "to": "x", "cue": "Pointer-ഉം", "flowCue": "അതുപോലെയാണ്" }
+        ]
+      }
+    },
+    {
+      "id": "s4",
+      "type": "code",
+      "label": "IN C",
+      "language": "c",
+      "lines": [
+        "int x = 10;",
+        "int *p;",
+        "p = &x;",
+        "printf(\"%d\", *p);"
+      ],
+      "highlight": [1, 2, 3, 4],
+      "caption": "*p gives 10",
+      "narration": "int x equals 10 എന്ന് എഴുതുമ്പോൾ, x-ന് memory-ൽ ഒരു സ്ഥലം കിട്ടും. int star p, p ഒരു pointer ആണെന്ന് പറയുന്നു. p equals ampersand x, x-ന്റെ address p-യിൽ വെക്കുന്നു. star p എഴുതിയാൽ, ആ address-ലുള്ള value, അതായത് 10, കിട്ടും.",
+      "visual": {
+        "nodes": [
+          { "id": "x", "col": 0, "row": 0, "text": "x = 10", "label": "Variable x", "cue": "സ്ഥലം" },
+          { "id": "p", "col": 2, "row": 0, "text": "p = &x", "label": "Pointer p", "cue": "ampersand" },
+          { "id": "out", "col": 1, "row": 1, "text": "*p → 10", "label": "Output", "cue": "അതായത്", "highlightCue": "അതായത്" }
+        ],
+        "edges": [
+          { "from": "p", "to": "x", "cue": "ampersand", "flowCue": "star p എഴുതിയാൽ" },
+          { "from": "x", "to": "out", "cue": "അതായത്" }
+        ]
+      }
+    },
+    {
+      "id": "s5",
+      "type": "takeaway",
+      "label": "REMEMBER",
+      "headline": "Pointer = address holder",
+      "caption": "&x gives address, *p gives value",
+      "narration": "Pointer ഒരു address സൂക്ഷിക്കുന്നു. Ampersand address തരും, star value തരും."
+    }
+  ]
+}

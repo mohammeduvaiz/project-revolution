@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { TOPIC_ID_PATTERN } from "./curriculum-schema.ts";
 
 export const NARRATION_MAX_CHARS = 2500;
 
@@ -74,7 +75,7 @@ const visualShape = {
 const visualSchema = z.object(visualShape);
 
 /**
- * A visual that must be present. Used for concept scenes, and for example scenes when Phase 2 adds them.
+ * A visual that must be present: concept and example scenes.
  * Checked per scene (not in the lesson-level refine) so it's reported alongside every other problem.
  */
 const requiredVisual = (sceneType: string) =>
@@ -112,30 +113,110 @@ const takeawayScene = z.object({
   visual: visualSchema.optional(),
 });
 
+/** The real-life example. Every lesson needs at least one. */
+const exampleScene = z.object({
+  ...base,
+  type: z.literal("example"),
+  setup: z.string().min(1),
+  payoff: z.string().min(1),
+  visual: requiredVisual("example"),
+});
+
+export const CODE_LANGUAGES = ["c", "python", "java", "sql", "text"] as const;
+export const CODE_MAX_LINES = 12;
+export const CODE_MAX_LINE_CHARS = 32;
+
+const codeScene = z.object({
+  ...base,
+  type: z.literal("code"),
+  language: z.enum(CODE_LANGUAGES),
+  lines: z
+    .array(z.string().max(CODE_MAX_LINE_CHARS, `a code line is at most ${CODE_MAX_LINE_CHARS} characters`))
+    .min(1)
+    .max(CODE_MAX_LINES, `code is at most ${CODE_MAX_LINES} lines`),
+  /** 1-based line numbers, highlighted in this order as the narration goes. */
+  highlight: z.array(z.number().int().min(1)).default([]),
+  visual: visualSchema.optional(),
+});
+
+const stepsScene = z.object({
+  ...base,
+  type: z.literal("steps"),
+  headline: z.string().min(1),
+  items: z.array(z.string().min(1)).min(2).max(6, "steps allows at most 6 items"),
+  visual: visualSchema.optional(),
+});
+
+const tableScene = z.object({
+  ...base,
+  type: z.literal("table"),
+  columns: z.array(z.string().min(1)).min(1).max(4, "a table allows at most 4 columns"),
+  rows: z.array(z.array(z.string())).min(1).max(5, "a table allows at most 5 rows"),
+  visual: visualSchema.optional(),
+});
+
 export const sceneSchema = z.discriminatedUnion("type", [
   hookScene,
   conceptScene,
+  exampleScene,
   flowScene,
   compareScene,
+  codeScene,
+  stepsScene,
+  tableScene,
   takeawayScene,
 ]);
 
+const reviewSchema = z.object({
+  status: z.enum(["pending", "approved", "changes"]),
+  reviewer: z.string().min(1).optional(),
+  notes: z.string().optional(),
+});
+
+const quizItem = z.object({
+  question: z.string().min(1),
+  options: z.array(z.string().min(1)).length(4, "a quiz question has exactly 4 options"),
+  answer: z.number().int().min(0).max(3, "answer is the index (0–3) of the right option"),
+});
+
 export const lessonSchema = z
   .object({
-    slug: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, "slug must be kebab-case"),
+    topicId: z.string().regex(TOPIC_ID_PATTERN, "topicId must look like PIC-4-01"),
     title: z.string().min(1),
-    description: z.string().min(1),
-    summary: z.string().min(1),
     language: z.literal("ml-IN"),
-    scenes: z.array(sceneSchema).min(1),
+    /** One sentence: the real-life example this reel uses. */
+    example: z.string().min(1),
+    review: reviewSchema,
+    quiz: z.array(quizItem).length(3, "a quiz has exactly 3 questions").optional(),
+    scenes: z.array(sceneSchema).min(4, "a lesson has 4–7 scenes").max(7, "a lesson has 4–7 scenes"),
   })
   .superRefine((lesson, ctx) => {
+    if (lesson.review.status === "approved" && !lesson.review.reviewer) {
+      ctx.addIssue({ code: "custom", path: ["review", "reviewer"], message: "an approved lesson must name its reviewer" });
+    }
+    if (!lesson.scenes.some((s) => s.type === "example")) {
+      ctx.addIssue({ code: "custom", path: ["scenes"], message: "every lesson needs at least one example scene" });
+    }
     const seen = new Set<string>();
     lesson.scenes.forEach((scene, i) => {
       if (seen.has(scene.id)) {
         ctx.addIssue({ code: "custom", path: ["scenes", i, "id"], message: `duplicate scene id "${scene.id}"` });
       }
       seen.add(scene.id);
+      if (scene.type === "code") {
+        scene.highlight.forEach((line, hi) => {
+          if (line > scene.lines.length) {
+            ctx.addIssue({ code: "custom", path: ["scenes", i, "highlight", hi], message: `line ${line} doesn't exist (code has ${scene.lines.length} lines)` });
+          }
+        });
+      }
+      if (scene.type === "table") {
+        scene.rows.forEach((row, ri) => {
+          if (row.length !== scene.columns.length) {
+            ctx.addIssue({ code: "custom", path: ["scenes", i, "rows", ri], message: `row has ${row.length} cells but the table has ${scene.columns.length} columns` });
+          }
+        });
+      }
       if (!("visual" in scene) || !scene.visual) return;
       const visual = scene.visual;
       const ids = new Set(visual.nodes.map((n) => n.id));
@@ -180,9 +261,12 @@ export type Scene = z.infer<typeof sceneSchema>;
 export type SceneType = Scene["type"];
 export type FlowStep = z.infer<typeof flowStep>;
 export type CompareSide = z.infer<typeof compareSide>;
+export type Review = z.infer<typeof reviewSchema>;
+export type QuizItem = z.infer<typeof quizItem>;
 
 export const manifestSchema = z.object({
-  slug: z.string(),
+  /** Lesson id: lowercase topic ID (pic-4-01). */
+  lessonId: z.string(),
   speaker: z.string(),
   scenes: z.array(
     z.object({
@@ -223,6 +307,10 @@ export const parseManifest = (raw: unknown, source: string): Manifest => {
   const lines = result.error.issues.map((issue) => `  - ${issue.path.map(String).join(".")}: ${issue.message}`);
   throw new Error(`Invalid manifest in ${source}:\n${lines.join("\n")}`);
 };
+
+/** Folders under video/public/. Draft audio is for Studio previews only and is never used by a publishing render. */
+export const AUDIO_DIR = "audio";
+export const DRAFT_AUDIO_DIR = "audio-draft";
 
 /** Audio file name for a scene, by 1-based position. */
 export const sceneAudioFile = (index: number): string => `scene-${index + 1}.wav`;

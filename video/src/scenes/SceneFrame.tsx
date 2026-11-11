@@ -8,8 +8,6 @@ export type SceneTimingProps = {
   index: number;
   audioFrames: number;
   durationInFrames: number;
-  /** The last scene skips its own fade-out; the whole video fades out instead. */
-  isLast: boolean;
 };
 
 type Props = SceneTimingProps & {
@@ -21,13 +19,12 @@ type Props = SceneTimingProps & {
 };
 
 /** Shared scene chrome: safe area, header, caption and a short fade in/out. */
-export const SceneFrame: React.FC<Props> = ({ index, label, caption, audioFrames, durationInFrames, isLast, centered = false, children }) => {
+export const SceneFrame: React.FC<Props> = ({ index, label, caption, audioFrames, durationInFrames, centered = false, children }) => {
   const frame = useCurrentFrame();
-  const fadeIn = interpolate(frame, [0, timing.sceneFadeFrames], [0, 1], { extrapolateRight: "clamp" });
-  const fadeOut = isLast
-    ? 1
-    : interpolate(frame, [durationInFrames - timing.sceneFadeFrames, durationInFrames], [1, 0], { extrapolateLeft: "clamp" });
-  const fade = Math.min(fadeIn, fadeOut);
+  const fade = Math.min(
+    interpolate(frame, [0, timing.sceneFadeFrames], [0, 1], { extrapolateRight: "clamp" }),
+    interpolate(frame, [durationInFrames - timing.sceneFadeFrames, durationInFrames], [1, 0], { extrapolateLeft: "clamp" }),
+  );
   return (
     <AbsoluteFill style={{ opacity: fade }}>
       <div

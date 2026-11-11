@@ -1,0 +1,79 @@
+{
+  "topicId": "PIC-1-04",
+  "title": "Operators and precedence",
+  "language": "ml-IN",
+  "example": "A college canteen bill: the cashier multiplies before adding, just like C",
+  "review": { "status": "pending" },
+  "scenes": [
+    {
+      "id": "s1",
+      "type": "hook",
+      "label": "PRECEDENCE",
+      "headline": "2 + 3 * 4 = ?",
+      "caption": "20 or 14?",
+      "narration": "2 plus 3 into 4. ഇതിന്റെ answer 20 ആണോ, 14 ആണോ? C ഇത് എങ്ങനെയാണ് തീരുമാനിക്കുന്നത്?"
+    },
+    {
+      "id": "s2",
+      "type": "concept",
+      "label": "PRECEDENCE",
+      "headline": "Some operators go first",
+      "caption": "* is done before +",
+      "narration": "ഒരു expression-ൽ പല operators ഉണ്ടെങ്കിൽ, ഏത് ആദ്യം ചെയ്യണമെന്ന് C-ക്ക് ഒരു order ഉണ്ട്. ഇതിനെയാണ് precedence എന്ന് പറയുന്നത്. Multiplication, addition-നേക്കാൾ മുമ്പ് ചെയ്യും. അതുകൊണ്ട് answer 14.",
+      "visual": {
+        "nodes": [
+          { "id": "expr", "col": 0, "row": 0, "text": "2 + 3 * 4", "label": "Expression", "cue": "expression-ൽ" },
+          { "id": "mul", "col": 2, "row": 0, "text": "3 * 4 = 12", "label": "* first", "cue": "Multiplication", "highlightCue": "Multiplication" },
+          { "id": "add", "col": 1, "row": 1, "text": "2 + 12 = 14", "label": "then +", "cue": "അതുകൊണ്ട്", "highlightCue": "answer 14" }
+        ],
+        "edges": [
+          { "from": "expr", "to": "mul", "cue": "Multiplication", "flowCue": "Multiplication" },
+          { "from": "mul", "to": "add", "cue": "അതുകൊണ്ട്", "flowCue": "അതുകൊണ്ട്" }
+        ]
+      }
+    },
+    {
+      "id": "s3",
+      "type": "example",
+      "label": "EXAMPLE",
+      "setup": "Canteen bill: one puffs at Rs 15, two chai at Rs 10 each.",
+      "payoff": "The cashier does 2 × 10 first, then adds 15. So does C.",
+      "caption": "15 + 2 * 10 = 35, not 170",
+      "narration": "College canteen-ൽ ഒരു puffs-ന് 15 രൂപ. രണ്ട് chai-ക്ക് 10 രൂപ വീതം. 15 plus 2 into 10 എന്ന് എഴുതിയാൽ, cashier ആദ്യം 2 into 10 കണക്കാക്കും. എന്നിട്ട് 15 കൂട്ടും. Total 35 രൂപ. C-യും അതുപോലെ തന്നെ.",
+      "visual": {
+        "nodes": [
+          { "id": "bill", "col": 0, "row": 0, "text": "15 + 2*10", "label": "The bill", "cue": "എഴുതിയാൽ" },
+          { "id": "chai", "col": 2, "row": 0, "text": "2 * 10 = 20", "label": "Chai first", "cue": "cashier", "highlightCue": "cashier" },
+          { "id": "total", "col": 1, "row": 1, "text": "15 + 20 = 35", "label": "Total Rs 35", "cue": "Total", "highlightCue": "Total" }
+        ],
+        "edges": [
+          { "from": "bill", "to": "chai", "cue": "cashier", "flowCue": "cashier" },
+          { "from": "chai", "to": "total", "cue": "കൂട്ടും", "flowCue": "കൂട്ടും" }
+        ]
+      }
+    },
+    {
+      "id": "s4",
+      "type": "table",
+      "label": "PRECEDENCE TABLE",
+      "columns": ["Rank", "Operators", "Kind"],
+      "rows": [
+        ["1", "*  /  %", "Multiply, divide, remainder"],
+        ["2", "+  -", "Add, subtract"],
+        ["3", "<  <=  >  >=", "Relational"],
+        ["4", "==  !=", "Equality"],
+        ["5", "&&   ||", "Logical: AND, then OR"]
+      ],
+      "caption": "Brackets ( ) override all of these",
+      "narration": "C-യിലെ ചില operators, ഉയർന്ന precedence-ൽ നിന്ന് താഴേക്ക്. ആദ്യം star, slash, percent. പിന്നെ plus, minus. അതിനുശേഷം less than, greater than പോലുള്ള relational operators. പിന്നെ double equals, not equals. അവസാനം logical and, logical or."
+    },
+    {
+      "id": "s5",
+      "type": "takeaway",
+      "label": "REMEMBER",
+      "headline": "* before +, brackets first",
+      "caption": "2 + 3 * 4 is 14",
+      "narration": "Multiplication, addition-നേക്കാൾ മുമ്പ്. സംശയമുണ്ടെങ്കിൽ, brackets ഉപയോഗിക്കൂ."
+    }
+  ]
+}

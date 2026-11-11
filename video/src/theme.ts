@@ -48,7 +48,10 @@ export const type = {
 
 export const layout = {
   sidePadding: 80,
-  topPadding: 200,
+  /** Scene content starts below the progress bar and the subject badge row. */
+  topPadding: 232,
+  /** Subject badge row, shown on every scene. */
+  badgeTop: 136,
   progressTop: 96,
   progressHeight: 8,
   /** Reserved for the caption only. */
@@ -64,8 +67,12 @@ export const layout = {
 export const timing = {
   /** Frames of silence after each scene's audio. */
   tailFrames: 12,
-  /** Extra hold at the very end of the video so the takeaway can land. */
-  endHoldFrames: 66,
+  /** Extra hold after the last scene's audio so the takeaway can land before the end card. */
+  endHoldFrames: 24,
+  /** The end card naming the next topic. */
+  endCardFrames: 90,
+  /** Example scenes reveal their payoff line at this fraction of the audio. */
+  examplePayoffAt: 0.6,
   /** The whole frame (background included) fades to ink over the last frames of the video. */
   outroFadeFrames: 24,
   /** Used when no manifest / audio exists for a scene. */
@@ -97,6 +104,8 @@ export const background = {
 export const diagram = {
   columns: 3,
   rowHeight: 340,
+  /** Shorter rows for scenes with text above and below the diagram (example). */
+  compactRowHeight: 300,
   iconBox: 168,
   iconSize: 92,
   /** Height of the label block under an icon box; arrows leaving downward clear it. */
@@ -119,4 +128,67 @@ export const diagram = {
   flowRepeats: 2,
   weightsShuffleFrames: 36,
   dimOpacity: 0.3,
+} as const;
+
+/** Subject badge and "S2 · Module 4" label at the top of every reel. */
+export const badge = {
+  height: 52,
+  paddingX: 22,
+  fontSize: 30,
+  radius: 12,
+  gap: 20,
+} as const;
+
+/** Example scene: the setup line above the diagram, the payoff line below it. */
+export const exampleScene = {
+  setupSize: 52,
+  payoffSize: 56,
+} as const;
+
+/** Code scene: block styling, syntax colours and reveal timing. */
+export const code = {
+  fontSize: 36,
+  lineHeight: 1.5,
+  paddingX: 36,
+  paddingY: 30,
+  lineNumberWidth: 56,
+  highlightBar: 6,
+  /** Lines reveal across this fraction of the audio; highlights use the rest. */
+  revealFraction: 0.4,
+  /** Non-highlighted lines fade to this once highlighting starts. */
+  dimOpacity: 0.45,
+  /** Active line tint: turmeric at this alpha. */
+  highlightRgb: "245, 184, 46",
+  highlightAlpha: 0.14,
+  syntax: {
+    plain: "#F4EFE6",
+    keyword: "#2DD4BF",
+    type: "#8EC5FF",
+    string: "#F2C879",
+    number: "#F59E6B",
+    comment: "#8FA3B5",
+    preprocessor: "#C9A7F5",
+    punctuation: "#B8C4CF",
+  },
+} as const;
+
+/** Steps scene: a numbered procedure revealed one item at a time. */
+export const steps = {
+  numberSize: 64,
+  numberFontSize: 30,
+  fontSize: 46,
+  gap: 26,
+  /** Items appear one by one across this fraction of the audio (CLAUDE.md: first half). */
+  revealFraction: 0.5,
+} as const;
+
+/** Table scene: a small table whose rows appear one at a time. */
+export const table = {
+  fontSize: 44,
+  headerFontSize: 28,
+  cellPaddingX: 22,
+  cellPaddingY: 20,
+  newestFill: "rgba(245, 184, 46, 0.10)",
+  /** Rows appear one by one across this fraction of the audio (CLAUDE.md: first half). */
+  revealFraction: 0.5,
 } as const;

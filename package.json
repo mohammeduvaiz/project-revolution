@@ -7,10 +7,14 @@
     "web"
   ],
   "scripts": {
+    "import": "tsx scripts/import-curriculum.ts",
+    "status": "tsx scripts/status.ts",
+    "draft": "tsx scripts/draft.ts",
     "voice": "tsx --env-file=.env scripts/generate-voice.ts",
-    "studio": "npm run studio -w video",
     "render": "tsx scripts/render.ts",
     "index": "tsx scripts/build-index.ts",
+    "studio": "tsx scripts/sync-video.ts && npm run studio -w video",
+    "sync": "tsx scripts/sync-video.ts",
     "web": "npm run dev -w web --",
     "typecheck": "tsc --noEmit -p . && npm run typecheck -w video && npm run typecheck -w web"
   },

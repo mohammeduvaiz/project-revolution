@@ -1,0 +1,19 @@
+{
+  "replacements": [
+    {
+      "from": "%d",
+      "to": "percent d",
+      "note": "Phase 2 precaution, not yet confirmed by listening: format specifiers are symbols the voice may skip or misread."
+    },
+    {
+      "from": "&",
+      "to": "ampersand",
+      "note": "Phase 2 precaution, not yet confirmed by listening: sample narration already spells this out (\"ampersand x\")."
+    },
+    {
+      "from": "*",
+      "to": "star",
+      "note": "Phase 2 precaution, not yet confirmed by listening: sample narration already spells this out (\"star p\")."
+    }
+  ]
+}
