@@ -59,10 +59,28 @@ const visualEdge = z.object({
   flowCue: cue.optional(),
 });
 
-const visualSchema = z.object({
-  nodes: z.array(visualNode).min(1).max(8),
-  edges: z.array(visualEdge).max(8).default([]),
-});
+/** Limits that keep a diagram readable on a phone. */
+export const VISUAL_MAX_NODES = 5;
+export const VISUAL_MAX_EDGES = 6;
+
+const visualShape = {
+  nodes: z
+    .array(visualNode)
+    .min(1, "a visual needs at least 1 node")
+    .max(VISUAL_MAX_NODES, `a visual allows at most ${VISUAL_MAX_NODES} nodes`),
+  edges: z.array(visualEdge).max(VISUAL_MAX_EDGES, `a visual allows at most ${VISUAL_MAX_EDGES} arrows`).default([]),
+};
+
+const visualSchema = z.object(visualShape);
+
+/**
+ * A visual that must be present. Used for concept scenes, and for example scenes when Phase 2 adds them.
+ * Checked per scene (not in the lesson-level refine) so it's reported alongside every other problem.
+ */
+const requiredVisual = (sceneType: string) =>
+  z.object(visualShape, {
+    error: (issue) => (issue.input === undefined ? `${sceneType} scenes must have a visual` : undefined),
+  });
 
 const hookScene = z.object({ ...base, type: z.literal("hook"), headline: z.string().min(1), visual: visualSchema.optional() });
 
@@ -71,7 +89,7 @@ const conceptScene = z.object({
   type: z.literal("concept"),
   headline: z.string().min(1),
   body: z.string().optional(),
-  visual: visualSchema.optional(),
+  visual: requiredVisual("concept"),
 });
 
 const flowStep = z.object({ title: z.string().min(1), sub: z.string().min(1) });

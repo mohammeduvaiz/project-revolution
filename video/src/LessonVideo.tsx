@@ -1,10 +1,10 @@
 import React from "react";
-import { AbsoluteFill, Audio, Series, staticFile, type CalculateMetadataFunction } from "remotion";
+import { AbsoluteFill, Audio, interpolate, Series, staticFile, useCurrentFrame, useVideoConfig, type CalculateMetadataFunction } from "remotion";
 import { parseLesson, parseManifest, type Lesson, type Manifest } from "../../shared/lesson-schema";
 import { Background } from "./components/Background";
 import { ProgressBar } from "./components/ProgressBar";
 import { SceneView } from "./scenes/SceneView";
-import { timing, video } from "./theme";
+import { colors, timing, video } from "./theme";
 
 export type SceneTiming = {
   id: string;
@@ -56,6 +56,17 @@ export const calculateLessonMetadata: CalculateMetadataFunction<LessonVideoProps
   return { durationInFrames, props: { ...props, lesson, timings } };
 };
 
+/** Fades everything, background included, to ink at the very end so the video closes calmly. */
+const Outro: React.FC = () => {
+  const frame = useCurrentFrame();
+  const { durationInFrames } = useVideoConfig();
+  const opacity = interpolate(frame, [durationInFrames - timing.outroFadeFrames, durationInFrames - 1], [0, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  return <AbsoluteFill style={{ backgroundColor: colors.ink, opacity }} />;
+};
+
 export const LessonVideo: React.FC<LessonVideoProps> = ({ lesson, timings }) => {
   if (!lesson) return <Background />;
   return (
@@ -68,12 +79,19 @@ export const LessonVideo: React.FC<LessonVideoProps> = ({ lesson, timings }) => 
           return (
             <Series.Sequence key={scene.id} durationInFrames={t.durationInFrames} name={`${scene.id} · ${scene.type}`}>
               {t.audioFile && <Audio src={staticFile(t.audioFile)} />}
-              <SceneView scene={scene} index={i} audioFrames={t.audioFrames} durationInFrames={t.durationInFrames} />
+              <SceneView
+                scene={scene}
+                index={i}
+                audioFrames={t.audioFrames}
+                durationInFrames={t.durationInFrames}
+                isLast={i === lesson.scenes.length - 1}
+              />
             </Series.Sequence>
           );
         })}
       </Series>
       <ProgressBar />
+      <Outro />
     </AbsoluteFill>
   );
 };

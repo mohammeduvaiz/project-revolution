@@ -95,21 +95,13 @@
             "cue": "ചോദ്യം"
           },
           {
-            "id": "search",
-            "col": 1,
-            "row": 0,
-            "icon": "search",
-            "label": "Search",
-            "cue": "search",
-            "highlightCue": "search"
-          },
-          {
             "id": "docs",
             "col": 2,
             "row": 0,
             "icon": "docs",
             "label": "Documents",
-            "cue": "documents"
+            "cue": "documents",
+            "highlightCue": "search"
           },
           {
             "id": "prompt",
@@ -140,19 +132,13 @@
         ],
         "edges": [
           {
-            "from": "question",
-            "to": "search",
-            "cue": "search",
-            "flowCue": "search"
-          },
-          {
             "from": "docs",
-            "to": "search",
-            "cue": "search",
+            "to": "prompt",
+            "cue": "എടുക്കും",
             "flowCue": "എടുക്കും"
           },
           {
-            "from": "search",
+            "from": "question",
             "to": "prompt",
             "cue": "prompt",
             "flowCue": "prompt"

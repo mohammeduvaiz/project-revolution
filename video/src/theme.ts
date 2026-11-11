@@ -65,7 +65,9 @@ export const timing = {
   /** Frames of silence after each scene's audio. */
   tailFrames: 12,
   /** Extra hold at the very end of the video so the takeaway can land. */
-  endHoldFrames: 36,
+  endHoldFrames: 66,
+  /** The whole frame (background included) fades to ink over the last frames of the video. */
+  outroFadeFrames: 24,
   /** Used when no manifest / audio exists for a scene. */
   fallbackSceneSeconds: 8,
   /** Caption types out across this fraction of the audio, then holds. */

@@ -4,7 +4,7 @@
     "title": "RAG vs Fine-Tuning",
     "description": "Two ways to give an AI model new information, and when to pick each.",
     "summary": "RAG leaves the model unchanged: for every question it fetches relevant documents and adds them to the prompt, so updating the documents updates the answers. Fine-Tuning trains the model further on examples, changing its weights, which suits a consistent style or format but needs retraining to add new facts. For facts that change often, like a college office's exam dates, start with RAG.",
-    "durationInSeconds": 60,
+    "durationInSeconds": 61,
     "videoUrl": "/videos/rag-vs-finetuning.mp4"
   }
 ]

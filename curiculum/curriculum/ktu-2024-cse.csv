@@ -1,0 +1,537 @@
+﻿ID,Sem,Subject,Module,Reel topic,Priority,Status,Module theme,Course code
+ATP-1-01,S1,Algorithmic Thinking with Python,1,"What is a problem-solving strategy, and why know several?",Minor,To script,Problem-solving strategies & Python basics,UCEST105
+ATP-1-02,S1,Algorithmic Thinking with Python,1,Trial and error,Minor,To script,Problem-solving strategies & Python basics,UCEST105
+ATP-1-03,S1,Algorithmic Thinking with Python,1,Heuristics: rules of thumb,Minor,To script,Problem-solving strategies & Python basics,UCEST105
+ATP-1-04,S1,Algorithmic Thinking with Python,1,Means-ends analysis,Major,To script,Problem-solving strategies & Python basics,UCEST105
+ATP-1-05,S1,Algorithmic Thinking with Python,1,Backtracking: working backward,Major,To script,Problem-solving strategies & Python basics,UCEST105
+ATP-1-06,S1,Algorithmic Thinking with Python,1,The computer as a model of computation,Minor,To script,Problem-solving strategies & Python basics,UCEST105
+ATP-1-07,S1,Algorithmic Thinking with Python,1,"The problem-solving process: understand, model, algorithm, program, test, evaluate",Major,To script,Problem-solving strategies & Python basics,UCEST105
+ATP-1-08,S1,Algorithmic Thinking with Python,1,Variables in Python,Major,To script,Problem-solving strategies & Python basics,UCEST105
+ATP-1-09,S1,Algorithmic Thinking with Python,1,Numeric and string data types,Major,To script,Problem-solving strategies & Python basics,UCEST105
+ATP-1-10,S1,Algorithmic Thinking with Python,1,Using the math module,Minor,To script,Problem-solving strategies & Python basics,UCEST105
+ATP-1-11,S1,Algorithmic Thinking with Python,1,Input and output: print() and input(),Major,To script,Problem-solving strategies & Python basics,UCEST105
+ATP-1-12,S1,Algorithmic Thinking with Python,1,Python operators and precedence,Major,To script,Problem-solving strategies & Python basics,UCEST105
+ATP-2-01,S1,Algorithmic Thinking with Python,2,"What is pseudocode, and why use it?",Major,To script,Pseudocode & flowcharts,UCEST105
+ATP-2-02,S1,Algorithmic Thinking with Python,2,Sequencing,Minor,To script,Pseudocode & flowcharts,UCEST105
+ATP-2-03,S1,Algorithmic Thinking with Python,2,Selection: if-else in pseudocode,Major,To script,Pseudocode & flowcharts,UCEST105
+ATP-2-04,S1,Algorithmic Thinking with Python,2,Selection: the case structure,Minor,To script,Pseudocode & flowcharts,UCEST105
+ATP-2-05,S1,Algorithmic Thinking with Python,2,"Repetition: for, while and repeat-until",Major,To script,Pseudocode & flowcharts,UCEST105
+ATP-2-06,S1,Algorithmic Thinking with Python,2,Flowchart symbols explained,Major,To script,Pseudocode & flowcharts,UCEST105
+ATP-2-07,S1,Algorithmic Thinking with Python,2,Worked example: smallest of three numbers,Major,To script,Pseudocode & flowcharts,UCEST105
+ATP-2-08,S1,Algorithmic Thinking with Python,2,Worked example: grade from the KTU grade scale,Major,To script,Pseudocode & flowcharts,UCEST105
+ATP-2-09,S1,Algorithmic Thinking with Python,2,Worked example: sum of n numbers with all three loops,Major,To script,Pseudocode & flowcharts,UCEST105
+ATP-2-10,S1,Algorithmic Thinking with Python,2,Worked example: factorial and largest of n numbers,Major,To script,Pseudocode & flowcharts,UCEST105
+ATP-3-01,S1,Algorithmic Thinking with Python,3,"if, elif and else in Python",Major,To script,"Selection, iteration, data types, functions & recursion",UCEST105
+ATP-3-02,S1,Algorithmic Thinking with Python,3,for loops and range(),Major,To script,"Selection, iteration, data types, functions & recursion",UCEST105
+ATP-3-03,S1,Algorithmic Thinking with Python,3,while loops,Major,To script,"Selection, iteration, data types, functions & recursion",UCEST105
+ATP-3-04,S1,Algorithmic Thinking with Python,3,Lists,Major,To script,"Selection, iteration, data types, functions & recursion",UCEST105
+ATP-3-05,S1,Algorithmic Thinking with Python,3,Tuples and sets,Minor,To script,"Selection, iteration, data types, functions & recursion",UCEST105
+ATP-3-06,S1,Algorithmic Thinking with Python,3,Strings as sequences,Major,To script,"Selection, iteration, data types, functions & recursion",UCEST105
+ATP-3-07,S1,Algorithmic Thinking with Python,3,Dictionaries,Major,To script,"Selection, iteration, data types, functions & recursion",UCEST105
+ATP-3-08,S1,Algorithmic Thinking with Python,3,Arrays with NumPy,Minor,To script,"Selection, iteration, data types, functions & recursion",UCEST105
+ATP-3-09,S1,Algorithmic Thinking with Python,3,Problem decomposition and modularization,Major,To script,"Selection, iteration, data types, functions & recursion",UCEST105
+ATP-3-10,S1,Algorithmic Thinking with Python,3,Defining and using functions,Major,To script,"Selection, iteration, data types, functions & recursion",UCEST105
+ATP-3-11,S1,Algorithmic Thinking with Python,3,Functions that return multiple values,Minor,To script,"Selection, iteration, data types, functions & recursion",UCEST105
+ATP-3-12,S1,Algorithmic Thinking with Python,3,What is recursion?,Major,To script,"Selection, iteration, data types, functions & recursion",UCEST105
+ATP-3-13,S1,Algorithmic Thinking with Python,3,Recursion and the call stack,Major,To script,"Selection, iteration, data types, functions & recursion",UCEST105
+ATP-3-14,S1,Algorithmic Thinking with Python,3,Avoiding circularity: the base case,Major,To script,"Selection, iteration, data types, functions & recursion",UCEST105
+ATP-3-15,S1,Algorithmic Thinking with Python,3,"Recursion examples: Fibonacci, GCD, factorial, sum of digits",Major,To script,"Selection, iteration, data types, functions & recursion",UCEST105
+ATP-4-01,S1,Algorithmic Thinking with Python,4,Brute force: padlocks and password guessing,Major,To script,Computational approaches to problem-solving,UCEST105
+ATP-4-02,S1,Algorithmic Thinking with Python,4,Divide and conquer: merge sort,Major,To script,Computational approaches to problem-solving,UCEST105
+ATP-4-03,S1,Algorithmic Thinking with Python,4,Divide and conquer: advantages and disadvantages,Minor,To script,Computational approaches to problem-solving,UCEST105
+ATP-4-04,S1,Algorithmic Thinking with Python,4,Dynamic programming: Fibonacci,Major,To script,Computational approaches to problem-solving,UCEST105
+ATP-4-05,S1,Algorithmic Thinking with Python,4,Recursion vs dynamic programming,Major,To script,Computational approaches to problem-solving,UCEST105
+ATP-4-06,S1,Algorithmic Thinking with Python,4,Greedy approach: most tasks in limited time,Major,To script,Computational approaches to problem-solving,UCEST105
+ATP-4-07,S1,Algorithmic Thinking with Python,4,Greedy algorithms vs dynamic programming,Major,To script,Computational approaches to problem-solving,UCEST105
+ATP-4-08,S1,Algorithmic Thinking with Python,4,Randomized approach: the coupon collector,Minor,To script,Computational approaches to problem-solving,UCEST105
+ATP-4-09,S1,Algorithmic Thinking with Python,4,Randomized approach: the hat-check problem,Minor,To script,Computational approaches to problem-solving,UCEST105
+FOC-1-01,S2,Foundations of Computing,1,What the CPU actually does,Major,To script,Computer hardware,GXEST203
+FOC-1-02,S2,Foundations of Computing,1,"Memory hierarchy: registers, cache, RAM",Major,To script,Computer hardware,GXEST203
+FOC-1-03,S2,Foundations of Computing,1,Virtual memory,Major,To script,Computer hardware,GXEST203
+FOC-1-04,S2,Foundations of Computing,1,"Motherboard, buses and interface cards",Minor,To script,Computer hardware,GXEST203
+FOC-1-05,S2,Foundations of Computing,1,I/O devices and device management,Minor,To script,Computer hardware,GXEST203
+FOC-1-06,S2,Foundations of Computing,1,Storage: HDD vs SSD vs optical drives,Major,To script,Computer hardware,GXEST203
+FOC-1-07,S2,Foundations of Computing,1,Firmware and the boot process,Major,To script,Computer hardware,GXEST203
+FOC-2-01,S2,Foundations of Computing,2,Binary: how computers represent data,Major,To script,Data representation & CPU architecture,GXEST203
+FOC-2-02,S2,Foundations of Computing,2,Integer representation,Major,To script,Data representation & CPU architecture,GXEST203
+FOC-2-03,S2,Foundations of Computing,2,"Bits, bytes, kilobytes and beyond",Minor,To script,Data representation & CPU architecture,GXEST203
+FOC-2-04,S2,Foundations of Computing,2,ASCII vs Unicode,Major,To script,Data representation & CPU architecture,GXEST203
+FOC-2-05,S2,Foundations of Computing,2,"Inside the CPU: ALU, registers, control unit",Major,To script,Data representation & CPU architecture,GXEST203
+FOC-2-06,S2,Foundations of Computing,2,Instruction format and assembly language basics,Minor,To script,Data representation & CPU architecture,GXEST203
+FOC-2-07,S2,Foundations of Computing,2,The fetch-execute cycle,Major,To script,Data representation & CPU architecture,GXEST203
+FOC-3-01,S2,Foundations of Computing,3,What an operating system does,Major,To script,System software & networking,GXEST203
+FOC-3-02,S2,Foundations of Computing,3,Basic Linux and Windows commands,Minor,To script,System software & networking,GXEST203
+FOC-3-03,S2,Foundations of Computing,3,Shell scripting with bash,Minor,To script,System software & networking,GXEST203
+FOC-3-04,S2,Foundations of Computing,3,"LAN, MAN and WAN",Major,To script,System software & networking,GXEST203
+FOC-3-05,S2,Foundations of Computing,3,Client-server vs peer-to-peer networks,Major,To script,System software & networking,GXEST203
+FOC-3-06,S2,Foundations of Computing,3,Network topologies,Major,To script,System software & networking,GXEST203
+FOC-3-07,S2,Foundations of Computing,3,IP addresses,Major,To script,System software & networking,GXEST203
+FOC-3-08,S2,Foundations of Computing,3,DHCP and NAT,Major,To script,System software & networking,GXEST203
+FOC-3-09,S2,Foundations of Computing,3,DNS: the internet's phonebook,Major,To script,System software & networking,GXEST203
+FOC-3-10,S2,Foundations of Computing,3,Network security and VPNs,Minor,To script,System software & networking,GXEST203
+FOC-3-11,S2,Foundations of Computing,3,"Routers, the Internet, the WWW and web servers",Minor,To script,System software & networking,GXEST203
+FOC-4-01,S2,Foundations of Computing,4,How a web page reaches your browser,Major,To script,"Web design: HTML, CSS, JavaScript",GXEST203
+FOC-4-02,S2,Foundations of Computing,4,HTML basics,Major,To script,"Web design: HTML, CSS, JavaScript",GXEST203
+FOC-4-03,S2,Foundations of Computing,4,HTML vs XHTML,Minor,To script,"Web design: HTML, CSS, JavaScript",GXEST203
+FOC-4-04,S2,Foundations of Computing,4,CSS: styling a page,Major,To script,"Web design: HTML, CSS, JavaScript",GXEST203
+FOC-4-05,S2,Foundations of Computing,4,JavaScript basics,Major,To script,"Web design: HTML, CSS, JavaScript",GXEST203
+FOC-4-06,S2,Foundations of Computing,4,Validating form inputs with JavaScript,Major,To script,"Web design: HTML, CSS, JavaScript",GXEST203
+PIC-1-01,S2,Programming in C,1,Structure of a C program,Major,To script,C fundamentals & control statements,GXEST204
+PIC-1-02,S2,Programming in C,1,"Character set, keywords, identifiers and constants",Minor,To script,C fundamentals & control statements,GXEST204
+PIC-1-03,S2,Programming in C,1,Data types and variables,Major,To script,C fundamentals & control statements,GXEST204
+PIC-1-04,S2,Programming in C,1,Operators and precedence,Major,To script,C fundamentals & control statements,GXEST204
+PIC-1-05,S2,Programming in C,1,Bitwise operators,Major,To script,C fundamentals & control statements,GXEST204
+PIC-1-06,S2,Programming in C,1,printf and scanf,Major,To script,C fundamentals & control statements,GXEST204
+PIC-1-07,S2,Programming in C,1,"if, if-else and nested if",Major,To script,C fundamentals & control statements,GXEST204
+PIC-1-08,S2,Programming in C,1,switch,Major,To script,C fundamentals & control statements,GXEST204
+PIC-1-09,S2,Programming in C,1,while vs do-while,Major,To script,C fundamentals & control statements,GXEST204
+PIC-1-10,S2,Programming in C,1,for loops and nested loops,Major,To script,C fundamentals & control statements,GXEST204
+PIC-1-11,S2,Programming in C,1,break and continue,Minor,To script,C fundamentals & control statements,GXEST204
+PIC-2-01,S2,Programming in C,2,One-dimensional arrays,Major,To script,Arrays & strings,GXEST204
+PIC-2-02,S2,Programming in C,2,enum and typedef,Minor,To script,Arrays & strings,GXEST204
+PIC-2-03,S2,Programming in C,2,Two-dimensional arrays and matrix programs,Major,To script,Arrays & strings,GXEST204
+PIC-2-04,S2,Programming in C,2,Sequential (linear) search,Major,To script,Arrays & strings,GXEST204
+PIC-2-05,S2,Programming in C,2,Bubble sort,Major,To script,Arrays & strings,GXEST204
+PIC-2-06,S2,Programming in C,2,"Strings in C: declaring, reading, printing",Major,To script,Arrays & strings,GXEST204
+PIC-2-07,S2,Programming in C,2,String library functions,Major,To script,Arrays & strings,GXEST204
+PIC-2-08,S2,Programming in C,2,String matching programs,Minor,To script,Arrays & strings,GXEST204
+PIC-3-01,S2,Programming in C,3,"Functions: definition, call and prototype",Major,To script,"Functions, structures & storage classes",GXEST204
+PIC-3-02,S2,Programming in C,3,Parameter passing: by value vs by reference,Major,To script,"Functions, structures & storage classes",GXEST204
+PIC-3-03,S2,Programming in C,3,Recursion in C,Major,To script,"Functions, structures & storage classes",GXEST204
+PIC-3-04,S2,Programming in C,3,Passing arrays to functions,Minor,To script,"Functions, structures & storage classes",GXEST204
+PIC-3-05,S2,Programming in C,3,Macros,Minor,To script,"Functions, structures & storage classes",GXEST204
+PIC-3-06,S2,Programming in C,3,Command-line arguments,Minor,To script,"Functions, structures & storage classes",GXEST204
+PIC-3-07,S2,Programming in C,3,Structures,Major,To script,"Functions, structures & storage classes",GXEST204
+PIC-3-08,S2,Programming in C,3,Arrays of structures and passing structures to functions,Minor,To script,"Functions, structures & storage classes",GXEST204
+PIC-3-09,S2,Programming in C,3,Union vs structure,Major,To script,"Functions, structures & storage classes",GXEST204
+PIC-3-10,S2,Programming in C,3,"Storage classes: auto, static, extern, register",Major,To script,"Functions, structures & storage classes",GXEST204
+PIC-4-01,S2,Programming in C,4,What is a pointer?,Major,To script,Pointers & files,GXEST204
+PIC-4-02,S2,Programming in C,4,Operations on pointers,Major,To script,Pointers & files,GXEST204
+PIC-4-03,S2,Programming in C,4,Passing pointers to functions,Minor,To script,Pointers & files,GXEST204
+PIC-4-04,S2,Programming in C,4,Pointers and arrays,Major,To script,Pointers & files,GXEST204
+PIC-4-05,S2,Programming in C,4,Processing strings with pointers,Minor,To script,Pointers & files,GXEST204
+PIC-4-06,S2,Programming in C,4,Pointer to pointer and arrays of pointers,Minor,To script,Pointers & files,GXEST204
+PIC-4-07,S2,Programming in C,4,Pointers to functions and to structures,Minor,To script,Pointers & files,GXEST204
+PIC-4-08,S2,Programming in C,4,"Dynamic memory allocation: malloc, calloc, realloc, free",Major,To script,Pointers & files,GXEST204
+PIC-4-09,S2,Programming in C,4,"Types of files; opening and closing a file",Major,To script,Pointers & files,GXEST204
+PIC-4-10,S2,Programming in C,4,Writing to and reading from a file,Major,To script,Pointers & files,GXEST204
+PIC-4-11,S2,Programming in C,4,"fseek, ftell, fread and fwrite",Minor,To script,Pointers & files,GXEST204
+DM-1-01,S2,Discrete Mathematics,1,"Sets, subsets and Venn diagrams",Major,To script,"Sets, functions & relations",PCCST205
+DM-1-02,S2,Discrete Mathematics,1,Set operations and set identities,Major,To script,"Sets, functions & relations",PCCST205
+DM-1-03,S2,Discrete Mathematics,1,The principle of inclusion-exclusion,Major,To script,"Sets, functions & relations",PCCST205
+DM-1-04,S2,Discrete Mathematics,1,"Injective, surjective and bijective functions",Major,To script,"Sets, functions & relations",PCCST205
+DM-1-05,S2,Discrete Mathematics,1,Inverse and composition of functions,Minor,To script,"Sets, functions & relations",PCCST205
+DM-1-06,S2,Discrete Mathematics,1,Cardinality and Cantor's diagonal argument,Minor,To script,"Sets, functions & relations",PCCST205
+DM-1-07,S2,Discrete Mathematics,1,Relations and their properties,Major,To script,"Sets, functions & relations",PCCST205
+DM-1-08,S2,Discrete Mathematics,1,Composing relations and representing them with matrices,Minor,To script,"Sets, functions & relations",PCCST205
+DM-1-09,S2,Discrete Mathematics,1,Equivalence relations and equivalence classes,Major,To script,"Sets, functions & relations",PCCST205
+DM-1-10,S2,Discrete Mathematics,1,Partial orders and Hasse diagrams,Major,To script,"Sets, functions & relations",PCCST205
+DM-1-11,S2,Discrete Mathematics,1,"Maximal and minimal elements; lattices",Minor,To script,"Sets, functions & relations",PCCST205
+DM-2-01,S2,Discrete Mathematics,2,Propositional logic and truth tables,Major,To script,Mathematical logic & proofs,PCCST205
+DM-2-02,S2,Discrete Mathematics,2,Propositional equivalences,Major,To script,Mathematical logic & proofs,PCCST205
+DM-2-03,S2,Discrete Mathematics,2,Predicates and quantifiers,Major,To script,Mathematical logic & proofs,PCCST205
+DM-2-04,S2,Discrete Mathematics,2,Nested quantifiers,Minor,To script,Mathematical logic & proofs,PCCST205
+DM-2-05,S2,Discrete Mathematics,2,Rules of inference,Major,To script,Mathematical logic & proofs,PCCST205
+DM-2-06,S2,Discrete Mathematics,2,Direct proof and proof by contraposition,Major,To script,Mathematical logic & proofs,PCCST205
+DM-2-07,S2,Discrete Mathematics,2,Proof by contradiction and by counterexample,Major,To script,Mathematical logic & proofs,PCCST205
+DM-2-08,S2,Discrete Mathematics,2,The pigeonhole principle,Major,To script,Mathematical logic & proofs,PCCST205
+DM-3-01,S2,Discrete Mathematics,3,Mathematical induction,Major,To script,Induction & recurrences,PCCST205
+DM-3-02,S2,Discrete Mathematics,3,Weak vs strong induction,Minor,To script,Induction & recurrences,PCCST205
+DM-3-03,S2,Discrete Mathematics,3,Recursive definitions and modeling with recurrences,Major,To script,Induction & recurrences,PCCST205
+DM-3-04,S2,Discrete Mathematics,3,Solving linear homogeneous recurrences,Major,To script,Induction & recurrences,PCCST205
+DM-3-05,S2,Discrete Mathematics,3,Solving non-homogeneous recurrences,Major,To script,Induction & recurrences,PCCST205
+DM-3-06,S2,Discrete Mathematics,3,Generating functions,Major,To script,Induction & recurrences,PCCST205
+DM-3-07,S2,Discrete Mathematics,3,Solving recurrences with generating functions,Major,To script,Induction & recurrences,PCCST205
+DM-4-01,S2,Discrete Mathematics,4,What is a group?,Major,To script,Group theory,PCCST205
+DM-4-02,S2,Discrete Mathematics,4,Abelian groups,Minor,To script,Group theory,PCCST205
+DM-4-03,S2,Discrete Mathematics,4,Permutation groups,Minor,To script,Group theory,PCCST205
+DM-4-04,S2,Discrete Mathematics,4,Subgroups,Minor,To script,Group theory,PCCST205
+DM-4-05,S2,Discrete Mathematics,4,Homomorphism and isomorphism,Major,To script,Group theory,PCCST205
+DM-4-06,S2,Discrete Mathematics,4,Cyclic groups,Minor,To script,Group theory,PCCST205
+DM-4-07,S2,Discrete Mathematics,4,Cosets and Lagrange's theorem,Major,To script,Group theory,PCCST205
+TOC-1-01,S3,Theory of Computation,1,Why study automata? Switches and vending machines,Minor,To script,Finite automata,PCCST302
+TOC-1-02,S3,Theory of Computation,1,"Alphabets, strings and languages",Major,To script,Finite automata,PCCST302
+TOC-1-03,S3,Theory of Computation,1,Deterministic finite automata (DFA),Major,To script,Finite automata,PCCST302
+TOC-1-04,S3,Theory of Computation,1,Nondeterministic finite automata (NFA),Major,To script,Finite automata,PCCST302
+TOC-1-05,S3,Theory of Computation,1,NFA with epsilon moves,Major,To script,Finite automata,PCCST302
+TOC-1-06,S3,Theory of Computation,1,NFA to DFA: subset construction,Major,To script,Finite automata,PCCST302
+TOC-1-07,S3,Theory of Computation,1,DFA minimization,Major,To script,Finite automata,PCCST302
+TOC-1-08,S3,Theory of Computation,1,Automata in real life: text search and keyword recognition,Minor,To script,Finite automata,PCCST302
+TOC-2-01,S3,Theory of Computation,2,Regular expressions,Major,To script,Regular languages & CFGs,PCCST302
+TOC-2-02,S3,Theory of Computation,2,Regular expression to finite automaton and back,Major,To script,Regular languages & CFGs,PCCST302
+TOC-2-03,S3,Theory of Computation,2,Regular grammars,Minor,To script,Regular languages & CFGs,PCCST302
+TOC-2-04,S3,Theory of Computation,2,Closure and decision properties of regular languages,Minor,To script,Regular languages & CFGs,PCCST302
+TOC-2-05,S3,Theory of Computation,2,Pumping lemma for regular languages,Major,To script,Regular languages & CFGs,PCCST302
+TOC-2-06,S3,Theory of Computation,2,Context-free grammars and derivations,Major,To script,Regular languages & CFGs,PCCST302
+TOC-2-07,S3,Theory of Computation,2,Parse trees and ambiguous grammars,Major,To script,Regular languages & CFGs,PCCST302
+TOC-3-01,S3,Theory of Computation,3,Pushdown automata,Major,To script,Pushdown automata & CFL properties,PCCST302
+TOC-3-02,S3,Theory of Computation,3,Deterministic vs nondeterministic PDA,Minor,To script,Pushdown automata & CFL properties,PCCST302
+TOC-3-03,S3,Theory of Computation,3,PDA and CFG are equivalent,Minor,To script,Pushdown automata & CFL properties,PCCST302
+TOC-3-04,S3,Theory of Computation,3,"Simplifying CFGs: useless, epsilon and unit productions",Major,To script,Pushdown automata & CFL properties,PCCST302
+TOC-3-05,S3,Theory of Computation,3,Chomsky normal form,Major,To script,Pushdown automata & CFL properties,PCCST302
+TOC-3-06,S3,Theory of Computation,3,Greibach normal form,Major,To script,Pushdown automata & CFL properties,PCCST302
+TOC-3-07,S3,Theory of Computation,3,Pumping lemma for context-free languages,Major,To script,Pushdown automata & CFL properties,PCCST302
+TOC-3-08,S3,Theory of Computation,3,Closure and decision properties of CFLs,Minor,To script,Pushdown automata & CFL properties,PCCST302
+TOC-4-01,S3,Theory of Computation,4,Turing machines,Major,To script,Turing machines & decidability,PCCST302
+TOC-4-02,S3,Theory of Computation,4,Turing machine variants,Minor,To script,Turing machines & decidability,PCCST302
+TOC-4-03,S3,Theory of Computation,4,Recursive vs recursively enumerable languages,Major,To script,Turing machines & decidability,PCCST302
+TOC-4-04,S3,Theory of Computation,4,The Chomsky hierarchy,Major,To script,Turing machines & decidability,PCCST302
+TOC-4-05,S3,Theory of Computation,4,Linear bounded automata,Minor,To script,Turing machines & decidability,PCCST302
+TOC-4-06,S3,Theory of Computation,4,Church-Turing thesis and the universal Turing machine,Major,To script,Turing machines & decidability,PCCST302
+TOC-4-07,S3,Theory of Computation,4,Decidability and reductions,Major,To script,Turing machines & decidability,PCCST302
+TOC-4-08,S3,Theory of Computation,4,The halting problem,Major,To script,Turing machines & decidability,PCCST302
+TOC-4-09,S3,Theory of Computation,4,Post correspondence problem,Minor,To script,Turing machines & decidability,PCCST302
+DSA-1-01,S3,Data Structures and Algorithms,1,Data abstraction,Minor,To script,"Complexity, stacks & queues",PCCST303
+DSA-1-02,S3,Data Structures and Algorithms,1,Time and space complexity,Major,To script,"Complexity, stacks & queues",PCCST303
+DSA-1-03,S3,Data Structures and Algorithms,1,"Asymptotic notation: Big O, Omega, Theta",Major,To script,"Complexity, stacks & queues",PCCST303
+DSA-1-04,S3,Data Structures and Algorithms,1,Polynomials and sparse matrices,Major,To script,"Complexity, stacks & queues",PCCST303
+DSA-1-05,S3,Data Structures and Algorithms,1,Stacks,Major,To script,"Complexity, stacks & queues",PCCST303
+DSA-1-06,S3,Data Structures and Algorithms,1,Multiple stacks in one array,Minor,To script,"Complexity, stacks & queues",PCCST303
+DSA-1-07,S3,Data Structures and Algorithms,1,Queues and circular queues,Major,To script,"Complexity, stacks & queues",PCCST303
+DSA-1-08,S3,Data Structures and Algorithms,1,Double-ended queues,Minor,To script,"Complexity, stacks & queues",PCCST303
+DSA-1-09,S3,Data Structures and Algorithms,1,Infix to postfix conversion,Major,To script,"Complexity, stacks & queues",PCCST303
+DSA-1-10,S3,Data Structures and Algorithms,1,Evaluating postfix expressions,Major,To script,"Complexity, stacks & queues",PCCST303
+DSA-2-01,S3,Data Structures and Algorithms,2,Singly linked lists,Major,To script,Linked lists & memory,PCCST303
+DSA-2-02,S3,Data Structures and Algorithms,2,Doubly linked lists,Major,To script,Linked lists & memory,PCCST303
+DSA-2-03,S3,Data Structures and Algorithms,2,Circular linked lists,Major,To script,Linked lists & memory,PCCST303
+DSA-2-04,S3,Data Structures and Algorithms,2,Stacks and queues using linked lists,Major,To script,Linked lists & memory,PCCST303
+DSA-2-05,S3,Data Structures and Algorithms,2,Polynomials using linked lists,Minor,To script,Linked lists & memory,PCCST303
+DSA-2-06,S3,Data Structures and Algorithms,2,"Memory allocation: first-fit, best-fit, worst-fit",Major,To script,Linked lists & memory,PCCST303
+DSA-2-07,S3,Data Structures and Algorithms,2,Garbage collection and compaction,Minor,To script,Linked lists & memory,PCCST303
+DSA-3-01,S3,Data Structures and Algorithms,3,Trees and their representation,Major,To script,Trees & graphs,PCCST303
+DSA-3-02,S3,Data Structures and Algorithms,3,Binary trees: types and properties,Major,To script,Trees & graphs,PCCST303
+DSA-3-03,S3,Data Structures and Algorithms,3,"Tree traversals: inorder, preorder, postorder",Major,To script,Trees & graphs,PCCST303
+DSA-3-04,S3,Data Structures and Algorithms,3,Expression trees,Minor,To script,Trees & graphs,PCCST303
+DSA-3-05,S3,Data Structures and Algorithms,3,Binary search trees,Major,To script,Trees & graphs,PCCST303
+DSA-3-06,S3,Data Structures and Algorithms,3,Binary heaps and priority queues,Major,To script,Trees & graphs,PCCST303
+DSA-3-07,S3,Data Structures and Algorithms,3,Graphs and how to represent them,Major,To script,Trees & graphs,PCCST303
+DSA-3-08,S3,Data Structures and Algorithms,3,Depth-first search (DFS),Major,To script,Trees & graphs,PCCST303
+DSA-3-09,S3,Data Structures and Algorithms,3,Breadth-first search (BFS),Major,To script,Trees & graphs,PCCST303
+DSA-3-10,S3,Data Structures and Algorithms,3,Single-source shortest paths,Major,To script,Trees & graphs,PCCST303
+DSA-4-01,S3,Data Structures and Algorithms,4,Selection sort,Major,To script,"Sorting, searching & hashing",PCCST303
+DSA-4-02,S3,Data Structures and Algorithms,4,Insertion sort,Major,To script,"Sorting, searching & hashing",PCCST303
+DSA-4-03,S3,Data Structures and Algorithms,4,Quick sort,Major,To script,"Sorting, searching & hashing",PCCST303
+DSA-4-04,S3,Data Structures and Algorithms,4,Merge sort,Major,To script,"Sorting, searching & hashing",PCCST303
+DSA-4-05,S3,Data Structures and Algorithms,4,Heap sort,Major,To script,"Sorting, searching & hashing",PCCST303
+DSA-4-06,S3,Data Structures and Algorithms,4,Radix sort,Minor,To script,"Sorting, searching & hashing",PCCST303
+DSA-4-07,S3,Data Structures and Algorithms,4,Linear vs binary search,Major,To script,"Sorting, searching & hashing",PCCST303
+DSA-4-08,S3,Data Structures and Algorithms,4,"Hash functions: division, mid-square, folding, digit analysis",Major,To script,"Sorting, searching & hashing",PCCST303
+DSA-4-09,S3,Data Structures and Algorithms,4,Collision resolution: linear and quadratic probing,Major,To script,"Sorting, searching & hashing",PCCST303
+DSA-4-10,S3,Data Structures and Algorithms,4,Double hashing and open hashing (chaining),Minor,To script,"Sorting, searching & hashing",PCCST303
+OOP-1-01,S3,Object Oriented Programming,1,Structure of a Java program,Major,To script,Java basics & OOP concepts,PBCST304
+OOP-1-02,S3,Object Oriented Programming,1,"JDK, compiler and the JVM",Major,To script,Java basics & OOP concepts,PBCST304
+OOP-1-03,S3,Object Oriented Programming,1,Primitive types and wrapper classes,Minor,To script,Java basics & OOP concepts,PBCST304
+OOP-1-04,S3,Object Oriented Programming,1,Type casting and autoboxing,Minor,To script,Java basics & OOP concepts,PBCST304
+OOP-1-05,S3,Object Oriented Programming,1,"Arrays, Strings and the Vector class",Major,To script,Java basics & OOP concepts,PBCST304
+OOP-1-06,S3,Object Oriented Programming,1,Operators and control statements in Java,Minor,To script,Java basics & OOP concepts,PBCST304
+OOP-1-07,S3,Object Oriented Programming,1,Command-line and variable-length arguments,Minor,To script,Java basics & OOP concepts,PBCST304
+OOP-1-08,S3,Object Oriented Programming,1,"The four pillars: abstraction, encapsulation, inheritance, polymorphism",Major,To script,Java basics & OOP concepts,PBCST304
+OOP-1-09,S3,Object Oriented Programming,1,"Classes, objects and references",Major,To script,Java basics & OOP concepts,PBCST304
+OOP-1-10,S3,Object Oriented Programming,1,Constructors,Major,To script,Java basics & OOP concepts,PBCST304
+OOP-1-11,S3,Object Oriented Programming,1,Access modifiers and the this keyword,Major,To script,Java basics & OOP concepts,PBCST304
+OOP-2-01,S3,Object Oriented Programming,2,Method overloading,Major,To script,Methods & inheritance,PBCST304
+OOP-2-02,S3,Object Oriented Programming,2,Objects as parameters and return values,Minor,To script,Methods & inheritance,PBCST304
+OOP-2-03,S3,Object Oriented Programming,2,Recursion in Java,Minor,To script,Methods & inheritance,PBCST304
+OOP-2-04,S3,Object Oriented Programming,2,static members and final variables,Major,To script,Methods & inheritance,PBCST304
+OOP-2-05,S3,Object Oriented Programming,2,Inner classes,Minor,To script,Methods & inheritance,PBCST304
+OOP-2-06,S3,Object Oriented Programming,2,Types of inheritance,Major,To script,Methods & inheritance,PBCST304
+OOP-2-07,S3,Object Oriented Programming,2,The super keyword and constructor calling order,Major,To script,Methods & inheritance,PBCST304
+OOP-2-08,S3,Object Oriented Programming,2,Method overriding,Major,To script,Methods & inheritance,PBCST304
+OOP-2-09,S3,Object Oriented Programming,2,Dynamic method dispatch,Major,To script,Methods & inheritance,PBCST304
+OOP-2-10,S3,Object Oriented Programming,2,final with inheritance,Minor,To script,Methods & inheritance,PBCST304
+OOP-3-01,S3,Object Oriented Programming,3,Packages and CLASSPATH,Major,To script,"Packages, interfaces, exceptions & design",PBCST304
+OOP-3-02,S3,Object Oriented Programming,3,Interfaces vs abstract classes,Major,To script,"Packages, interfaces, exceptions & design",PBCST304
+OOP-3-03,S3,Object Oriented Programming,3,Exceptions: checked vs unchecked,Major,To script,"Packages, interfaces, exceptions & design",PBCST304
+OOP-3-04,S3,Object Oriented Programming,3,"try, catch and finally",Major,To script,"Packages, interfaces, exceptions & design",PBCST304
+OOP-3-05,S3,Object Oriented Programming,3,"throw vs throws, and custom exceptions",Major,To script,"Packages, interfaces, exceptions & design",PBCST304
+OOP-3-06,S3,Object Oriented Programming,3,Singleton design pattern,Minor,To script,"Packages, interfaces, exceptions & design",PBCST304
+OOP-3-07,S3,Object Oriented Programming,3,Adapter design pattern,Minor,To script,"Packages, interfaces, exceptions & design",PBCST304
+OOP-3-08,S3,Object Oriented Programming,3,SOLID principles,Major,To script,"Packages, interfaces, exceptions & design",PBCST304
+OOP-4-01,S3,Object Oriented Programming,4,"Swing vs AWT, and MVC",Minor,To script,"Swing, events & JDBC",PBCST304
+OOP-4-02,S3,Object Oriented Programming,4,"Swing components, containers and layout managers",Major,To script,"Swing, events & JDBC",PBCST304
+OOP-4-03,S3,Object Oriented Programming,4,Event handling: the delegation model and listeners,Major,To script,"Swing, events & JDBC",PBCST304
+OOP-4-04,S3,Object Oriented Programming,4,JDBC: driver types and connecting to a database,Major,To script,"Swing, events & JDBC",PBCST304
+OOP-4-05,S3,Object Oriented Programming,4,CRUD operations with JDBC,Major,To script,"Swing, events & JDBC",PBCST304
+DBMS-1-01,S4,Database Management Systems,1,"What is a DBMS, and why not just use files?",Major,To script,Database concepts & ER modeling,PCCST402
+DBMS-1-02,S4,Database Management Systems,1,"Data models, schemas and instances",Major,To script,Database concepts & ER modeling,PCCST402
+DBMS-1-03,S4,Database Management Systems,1,Three-schema architecture and data independence,Major,To script,Database concepts & ER modeling,PCCST402
+DBMS-1-04,S4,Database Management Systems,1,Database languages and interfaces,Minor,To script,Database concepts & ER modeling,PCCST402
+DBMS-1-05,S4,Database Management Systems,1,Centralized and client/server architectures,Minor,To script,Database concepts & ER modeling,PCCST402
+DBMS-1-06,S4,Database Management Systems,1,"Entities, attributes and keys",Major,To script,Database concepts & ER modeling,PCCST402
+DBMS-1-07,S4,Database Management Systems,1,"Relationships, roles and structural constraints",Major,To script,Database concepts & ER modeling,PCCST402
+DBMS-1-08,S4,Database Management Systems,1,Weak entities,Major,To script,Database concepts & ER modeling,PCCST402
+DBMS-1-09,S4,Database Management Systems,1,Worked example: ER diagram for a company database,Major,To script,Database concepts & ER modeling,PCCST402
+DBMS-2-01,S4,Database Management Systems,2,The relational model and its constraints,Major,To script,Relational model & SQL,PCCST402
+DBMS-2-02,S4,Database Management Systems,2,Relational algebra,Major,To script,Relational model & SQL,PCCST402
+DBMS-2-03,S4,Database Management Systems,2,Relational calculus,Minor,To script,Relational model & SQL,PCCST402
+DBMS-2-04,S4,Database Management Systems,2,SQL DDL: creating tables,Major,To script,Relational model & SQL,PCCST402
+DBMS-2-05,S4,Database Management Systems,2,"SQL DML: SELECT, INSERT, UPDATE, DELETE",Major,To script,Relational model & SQL,PCCST402
+DBMS-2-06,S4,Database Management Systems,2,Assertions and triggers,Minor,To script,Relational model & SQL,PCCST402
+DBMS-2-07,S4,Database Management Systems,2,Views,Major,To script,Relational model & SQL,PCCST402
+DBMS-2-08,S4,Database Management Systems,2,Mapping an ER diagram to tables,Major,To script,Relational model & SQL,PCCST402
+DBMS-3-01,S4,Database Management Systems,3,Functional dependencies,Major,To script,"Normalization, transactions & recovery",PCCST402
+DBMS-3-02,S4,Database Management Systems,3,Normalization: 1NF,Major,To script,"Normalization, transactions & recovery",PCCST402
+DBMS-3-03,S4,Database Management Systems,3,Normalization: 2NF,Major,To script,"Normalization, transactions & recovery",PCCST402
+DBMS-3-04,S4,Database Management Systems,3,Normalization: 3NF,Major,To script,"Normalization, transactions & recovery",PCCST402
+DBMS-3-05,S4,Database Management Systems,3,Transactions and ACID properties,Major,To script,"Normalization, transactions & recovery",PCCST402
+DBMS-3-06,S4,Database Management Systems,3,Schedules: recoverability,Major,To script,"Normalization, transactions & recovery",PCCST402
+DBMS-3-07,S4,Database Management Systems,3,Schedules: serializability,Major,To script,"Normalization, transactions & recovery",PCCST402
+DBMS-3-08,S4,Database Management Systems,3,Two-phase locking,Major,To script,"Normalization, transactions & recovery",PCCST402
+DBMS-3-09,S4,Database Management Systems,3,Recovery: deferred and immediate update,Major,To script,"Normalization, transactions & recovery",PCCST402
+DBMS-3-10,S4,Database Management Systems,3,Shadow paging,Minor,To script,"Normalization, transactions & recovery",PCCST402
+DBMS-4-01,S4,Database Management Systems,4,"What is NoSQL, and why?",Major,To script,NoSQL,PCCST402
+DBMS-4-02,S4,Database Management Systems,4,The CAP theorem,Major,To script,NoSQL,PCCST402
+DBMS-4-03,S4,Database Management Systems,4,BASE vs ACID,Major,To script,NoSQL,PCCST402
+DBMS-4-04,S4,Database Management Systems,4,Key-value and document stores,Major,To script,NoSQL,PCCST402
+DBMS-4-05,S4,Database Management Systems,4,Column-family and graph databases,Major,To script,NoSQL,PCCST402
+DBMS-4-06,S4,Database Management Systems,4,NoSQL use cases and limitations,Minor,To script,NoSQL,PCCST402
+OS-1-01,S4,Operating Systems,1,What an OS does: services and kernels,Major,To script,"Processes, threads & scheduling",PCCST403
+OS-1-02,S4,Operating Systems,1,Linux vs classic Unix kernels,Minor,To script,"Processes, threads & scheduling",PCCST403
+OS-1-03,S4,Operating Systems,1,Processes and process states,Major,To script,"Processes, threads & scheduling",PCCST403
+OS-1-04,S4,Operating Systems,1,Process creation and the process API,Major,To script,"Processes, threads & scheduling",PCCST403
+OS-1-05,S4,Operating Systems,1,"User mode, kernel mode and context switching",Major,To script,"Processes, threads & scheduling",PCCST403
+OS-1-06,S4,Operating Systems,1,The boot sequence,Minor,To script,"Processes, threads & scheduling",PCCST403
+OS-1-07,S4,Operating Systems,1,Threads and multithreading models,Major,To script,"Processes, threads & scheduling",PCCST403
+OS-1-08,S4,Operating Systems,1,"CPU scheduling: FCFS, SJF, priority, round robin",Major,To script,"Processes, threads & scheduling",PCCST403
+OS-1-09,S4,Operating Systems,1,Multilevel feedback queue,Major,To script,"Processes, threads & scheduling",PCCST403
+OS-1-10,S4,Operating Systems,1,Linux's Completely Fair Scheduler,Minor,To script,"Processes, threads & scheduling",PCCST403
+OS-2-01,S4,Operating Systems,2,Concurrency and the critical section problem,Major,To script,Synchronization & deadlocks,PCCST403
+OS-2-02,S4,Operating Systems,2,Locks: test-and-set and compare-and-swap,Major,To script,Synchronization & deadlocks,PCCST403
+OS-2-03,S4,Operating Systems,2,Semaphores,Major,To script,Synchronization & deadlocks,PCCST403
+OS-2-04,S4,Operating Systems,2,Bounded buffer (producer-consumer) problem,Major,To script,Synchronization & deadlocks,PCCST403
+OS-2-05,S4,Operating Systems,2,Readers-writers problem,Major,To script,Synchronization & deadlocks,PCCST403
+OS-2-06,S4,Operating Systems,2,Dining philosophers problem,Major,To script,Synchronization & deadlocks,PCCST403
+OS-2-07,S4,Operating Systems,2,Deadlock: the four conditions,Major,To script,Synchronization & deadlocks,PCCST403
+OS-2-08,S4,Operating Systems,2,Deadlock prevention,Major,To script,Synchronization & deadlocks,PCCST403
+OS-2-09,S4,Operating Systems,2,Deadlock avoidance: the Banker's algorithm,Major,To script,Synchronization & deadlocks,PCCST403
+OS-2-10,S4,Operating Systems,2,Deadlock detection and recovery,Major,To script,Synchronization & deadlocks,PCCST403
+OS-3-01,S4,Operating Systems,3,Address spaces and address translation,Major,To script,Memory management,PCCST403
+OS-3-02,S4,Operating Systems,3,Segmentation,Major,To script,Memory management,PCCST403
+OS-3-03,S4,Operating Systems,3,Paging and page tables,Major,To script,Memory management,PCCST403
+OS-3-04,S4,Operating Systems,3,TLBs,Major,To script,Memory management,PCCST403
+OS-3-05,S4,Operating Systems,3,Smaller page tables: multi-level paging,Minor,To script,Memory management,PCCST403
+OS-3-06,S4,Operating Systems,3,Swap space and page faults,Major,To script,Memory management,PCCST403
+OS-3-07,S4,Operating Systems,3,"Page replacement: FIFO, LRU, optimal",Major,To script,Memory management,PCCST403
+OS-3-08,S4,Operating Systems,3,Thrashing,Major,To script,Memory management,PCCST403
+OS-4-01,S4,Operating Systems,4,"I/O: programmed I/O, interrupts and DMA",Major,To script,"I/O, disks & file systems",PCCST403
+OS-4-02,S4,Operating Systems,4,Device drivers,Minor,To script,"I/O, disks & file systems",PCCST403
+OS-4-03,S4,Operating Systems,4,Hard disk geometry,Minor,To script,"I/O, disks & file systems",PCCST403
+OS-4-04,S4,Operating Systems,4,"Disk scheduling: FCFS, SSTF, SCAN, C-SCAN",Major,To script,"I/O, disks & file systems",PCCST403
+OS-4-05,S4,Operating Systems,4,"Files, file descriptors and access methods",Major,To script,"I/O, disks & file systems",PCCST403
+OS-4-06,S4,Operating Systems,4,Hard links vs symbolic links,Major,To script,"I/O, disks & file systems",PCCST403
+OS-4-07,S4,Operating Systems,4,"Directories, permissions and ACLs",Major,To script,"I/O, disks & file systems",PCCST403
+OS-4-08,S4,Operating Systems,4,Mounting a file system,Minor,To script,"I/O, disks & file systems",PCCST403
+OS-4-09,S4,Operating Systems,4,Inodes and multi-level indexing,Major,To script,"I/O, disks & file systems",PCCST403
+OS-4-10,S4,Operating Systems,4,The Virtual File System (VFS),Minor,To script,"I/O, disks & file systems",PCCST403
+COA-1-01,S4,Computer Organization and Architecture,1,Functional units of a computer,Major,To script,Basics & RISC assembly,PBCST404
+COA-1-02,S4,Computer Organization and Architecture,1,Memory map and endianness,Major,To script,Basics & RISC assembly,PBCST404
+COA-1-03,S4,Computer Organization and Architecture,1,CISC vs RISC,Major,To script,Basics & RISC assembly,PBCST404
+COA-1-04,S4,Computer Organization and Architecture,1,RISC assembly language and directives,Major,To script,Basics & RISC assembly,PBCST404
+COA-1-05,S4,Computer Organization and Architecture,1,"Branches, conditionals and loops in assembly",Major,To script,Basics & RISC assembly,PBCST404
+COA-1-06,S4,Computer Organization and Architecture,1,Arrays and function calls in assembly,Major,To script,Basics & RISC assembly,PBCST404
+COA-1-07,S4,Computer Organization and Architecture,1,The instruction execution cycle,Major,To script,Basics & RISC assembly,PBCST404
+COA-1-08,S4,Computer Organization and Architecture,1,Machine language and addressing modes,Major,To script,Basics & RISC assembly,PBCST404
+COA-1-09,S4,Computer Organization and Architecture,1,The stored program concept,Minor,To script,Basics & RISC assembly,PBCST404
+COA-2-01,S4,Computer Organization and Architecture,2,Measuring processor performance,Major,To script,Microarchitecture & pipelining,PBCST404
+COA-2-02,S4,Computer Organization and Architecture,2,Single-cycle processor: datapath and control,Major,To script,Microarchitecture & pipelining,PBCST404
+COA-2-03,S4,Computer Organization and Architecture,2,Pipelining: the idea,Major,To script,Microarchitecture & pipelining,PBCST404
+COA-2-04,S4,Computer Organization and Architecture,2,Pipelined datapath and control,Major,To script,Microarchitecture & pipelining,PBCST404
+COA-2-05,S4,Computer Organization and Architecture,2,"Pipeline hazards: data, control, structural",Major,To script,Microarchitecture & pipelining,PBCST404
+COA-2-06,S4,Computer Organization and Architecture,2,Solving hazards: forwarding and stalls,Major,To script,Microarchitecture & pipelining,PBCST404
+COA-3-01,S4,Computer Organization and Architecture,3,Memory system performance,Minor,To script,Memory: caches & virtual memory,PBCST404
+COA-3-02,S4,Computer Organization and Architecture,3,Cache basics,Major,To script,Memory: caches & virtual memory,PBCST404
+COA-3-03,S4,Computer Organization and Architecture,3,"Cache mapping: direct, associative, set-associative",Major,To script,Memory: caches & virtual memory,PBCST404
+COA-3-04,S4,Computer Organization and Architecture,3,Cache replacement policies,Major,To script,Memory: caches & virtual memory,PBCST404
+COA-3-05,S4,Computer Organization and Architecture,3,Multilevel caches and reducing miss rate,Minor,To script,Memory: caches & virtual memory,PBCST404
+COA-3-06,S4,Computer Organization and Architecture,3,Write policies: write-through vs write-back,Major,To script,Memory: caches & virtual memory,PBCST404
+COA-3-07,S4,Computer Organization and Architecture,3,"Virtual memory: translation, page tables, TLBs",Major,To script,Memory: caches & virtual memory,PBCST404
+COA-3-08,S4,Computer Organization and Architecture,3,Memory protection,Minor,To script,Memory: caches & virtual memory,PBCST404
+COA-4-01,S4,Computer Organization and Architecture,4,I/O modules and external devices,Minor,To script,I/O organization,PBCST404
+COA-4-02,S4,Computer Organization and Architecture,4,Programmed I/O vs interrupt-driven I/O,Major,To script,I/O organization,PBCST404
+COA-4-03,S4,Computer Organization and Architecture,4,Direct memory access (DMA),Major,To script,I/O organization,PBCST404
+COA-4-04,S4,Computer Organization and Architecture,4,Embedded I/O: GPIO and serial I/O,Minor,To script,I/O organization,PBCST404
+CN-1-01,S5,Computer Networks,1,How the internet is organized,Minor,To script,Layering & application layer,PCCST501
+CN-1-02,S5,Computer Networks,1,Protocol layering: TCP/IP and OSI,Major,To script,Layering & application layer,PCCST501
+CN-1-03,S5,Computer Networks,1,Client-server applications,Major,To script,Layering & application layer,PCCST501
+CN-1-04,S5,Computer Networks,1,The web and HTTP,Major,To script,Layering & application layer,PCCST501
+CN-1-05,S5,Computer Networks,1,FTP,Minor,To script,Layering & application layer,PCCST501
+CN-1-06,S5,Computer Networks,1,"Email: SMTP, POP and IMAP",Major,To script,Layering & application layer,PCCST501
+CN-1-07,S5,Computer Networks,1,DNS,Major,To script,Layering & application layer,PCCST501
+CN-1-08,S5,Computer Networks,1,Peer-to-peer networks: BitTorrent,Minor,To script,Layering & application layer,PCCST501
+CN-2-01,S5,Computer Networks,2,Transport layer services,Major,To script,Transport & network layers,PCCST501
+CN-2-02,S5,Computer Networks,2,UDP,Major,To script,Transport & network layers,PCCST501
+CN-2-03,S5,Computer Networks,2,TCP: connections and reliability,Major,To script,Transport & network layers,PCCST501
+CN-2-04,S5,Computer Networks,2,TCP flow and congestion control,Major,To script,Transport & network layers,PCCST501
+CN-2-05,S5,Computer Networks,2,Socket programming basics,Minor,To script,Transport & network layers,PCCST501
+CN-2-06,S5,Computer Networks,2,Network layer and IP addressing,Major,To script,Transport & network layers,PCCST501
+CN-2-07,S5,Computer Networks,2,Routing: distance vector vs link state,Major,To script,Transport & network layers,PCCST501
+CN-2-08,S5,Computer Networks,2,Intra-domain vs inter-domain routing,Major,To script,Transport & network layers,PCCST501
+CN-2-09,S5,Computer Networks,2,Multicast routing,Minor,To script,Transport & network layers,PCCST501
+CN-2-10,S5,Computer Networks,2,IPv6,Major,To script,Transport & network layers,PCCST501
+CN-2-11,S5,Computer Networks,2,Quality of service,Minor,To script,Transport & network layers,PCCST501
+CN-3-01,S5,Computer Networks,3,Data link control: framing and error control,Major,To script,Data link layer & wireless,PCCST501
+CN-3-02,S5,Computer Networks,3,"Multiple access: ALOHA, CSMA/CD",Major,To script,Data link layer & wireless,PCCST501
+CN-3-03,S5,Computer Networks,3,MAC addresses and ARP,Major,To script,Data link layer & wireless,PCCST501
+CN-3-04,S5,Computer Networks,3,Ethernet,Major,To script,Data link layer & wireless,PCCST501
+CN-3-05,S5,Computer Networks,3,"Hubs, switches and routers",Major,To script,Data link layer & wireless,PCCST501
+CN-3-06,S5,Computer Networks,3,Wireless LANs (Wi-Fi),Major,To script,Data link layer & wireless,PCCST501
+CN-3-07,S5,Computer Networks,3,Mobile IP,Minor,To script,Data link layer & wireless,PCCST501
+CN-4-01,S5,Computer Networks,4,Network management: SNMP and ASN.1,Minor,To script,Network management & physical layer,PCCST501
+CN-4-02,S5,Computer Networks,4,Data and signals,Major,To script,Network management & physical layer,PCCST501
+CN-4-03,S5,Computer Networks,4,Digital and analog transmission,Major,To script,Network management & physical layer,PCCST501
+CN-4-04,S5,Computer Networks,4,Bandwidth utilization: multiplexing,Major,To script,Network management & physical layer,PCCST501
+CN-4-05,S5,Computer Networks,4,Transmission media,Minor,To script,Network management & physical layer,PCCST501
+DAA-1-01,S5,Design and Analysis of Algorithms,1,What makes a good algorithm?,Minor,To script,Analysis & AVL trees,PCCST502
+DAA-1-02,S5,Design and Analysis of Algorithms,1,"Best, worst and average case",Major,To script,Analysis & AVL trees,PCCST502
+DAA-1-03,S5,Design and Analysis of Algorithms,1,Asymptotic notations,Major,To script,Analysis & AVL trees,PCCST502
+DAA-1-04,S5,Design and Analysis of Algorithms,1,Solving recurrences: iteration and recursion tree,Major,To script,Analysis & AVL trees,PCCST502
+DAA-1-05,S5,Design and Analysis of Algorithms,1,Solving recurrences: substitution,Major,To script,Analysis & AVL trees,PCCST502
+DAA-1-06,S5,Design and Analysis of Algorithms,1,The Master Theorem,Major,To script,Analysis & AVL trees,PCCST502
+DAA-1-07,S5,Design and Analysis of Algorithms,1,AVL trees and rotations,Major,To script,Analysis & AVL trees,PCCST502
+DAA-2-01,S5,Design and Analysis of Algorithms,2,Disjoint sets: union and find,Major,To script,"Disjoint sets, graphs & divide and conquer",PCCST502
+DAA-2-02,S5,Design and Analysis of Algorithms,2,Union by rank and path compression,Major,To script,"Disjoint sets, graphs & divide and conquer",PCCST502
+DAA-2-03,S5,Design and Analysis of Algorithms,2,BFS and DFS revisited,Major,To script,"Disjoint sets, graphs & divide and conquer",PCCST502
+DAA-2-04,S5,Design and Analysis of Algorithms,2,Strongly connected components,Major,To script,"Disjoint sets, graphs & divide and conquer",PCCST502
+DAA-2-05,S5,Design and Analysis of Algorithms,2,Topological sorting,Major,To script,"Disjoint sets, graphs & divide and conquer",PCCST502
+DAA-2-06,S5,Design and Analysis of Algorithms,2,Divide and conquer: merge sort analysis,Major,To script,"Disjoint sets, graphs & divide and conquer",PCCST502
+DAA-2-07,S5,Design and Analysis of Algorithms,2,Strassen's matrix multiplication,Major,To script,"Disjoint sets, graphs & divide and conquer",PCCST502
+DAA-3-01,S5,Design and Analysis of Algorithms,3,The greedy strategy: fractional knapsack,Major,To script,"Greedy, dynamic programming & backtracking",PCCST502
+DAA-3-02,S5,Design and Analysis of Algorithms,3,Minimum spanning tree: Kruskal's algorithm,Major,To script,"Greedy, dynamic programming & backtracking",PCCST502
+DAA-3-03,S5,Design and Analysis of Algorithms,3,Minimum spanning tree: Prim's algorithm,Major,To script,"Greedy, dynamic programming & backtracking",PCCST502
+DAA-3-04,S5,Design and Analysis of Algorithms,3,Dijkstra's shortest path,Major,To script,"Greedy, dynamic programming & backtracking",PCCST502
+DAA-3-05,S5,Design and Analysis of Algorithms,3,Dynamic programming: matrix chain multiplication,Major,To script,"Greedy, dynamic programming & backtracking",PCCST502
+DAA-3-06,S5,Design and Analysis of Algorithms,3,Floyd-Warshall all-pairs shortest paths,Major,To script,"Greedy, dynamic programming & backtracking",PCCST502
+DAA-3-07,S5,Design and Analysis of Algorithms,3,Backtracking: N-Queens,Major,To script,"Greedy, dynamic programming & backtracking",PCCST502
+DAA-4-01,S5,Design and Analysis of Algorithms,4,Branch and bound: travelling salesman,Major,To script,Complexity classes & approximation,PCCST502
+DAA-4-02,S5,Design and Analysis of Algorithms,4,Tractable vs intractable problems,Minor,To script,Complexity classes & approximation,PCCST502
+DAA-4-03,S5,Design and Analysis of Algorithms,4,"P, NP, NP-hard and NP-complete",Major,To script,Complexity classes & approximation,PCCST502
+DAA-4-04,S5,Design and Analysis of Algorithms,4,Proving NP-completeness: Clique and Vertex Cover,Major,To script,Complexity classes & approximation,PCCST502
+DAA-4-05,S5,Design and Analysis of Algorithms,4,Approximation algorithms: bin packing,Major,To script,Complexity classes & approximation,PCCST502
+DAA-4-06,S5,Design and Analysis of Algorithms,4,Randomized algorithms: Monte Carlo vs Las Vegas,Major,To script,Complexity classes & approximation,PCCST502
+DAA-4-07,S5,Design and Analysis of Algorithms,4,Randomized quicksort,Minor,To script,Complexity classes & approximation,PCCST502
+ML-1-01,S5,Machine Learning,1,Machine learning vs traditional programming,Major,To script,Foundations & linear regression,PCCST503
+ML-1-02,S5,Machine Learning,1,"Supervised, unsupervised, semi-supervised and reinforcement learning",Major,To script,Foundations & linear regression,PCCST503
+ML-1-03,S5,Machine Learning,1,Maximum likelihood (MLE) vs MAP,Major,To script,Foundations & linear regression,PCCST503
+ML-1-04,S5,Machine Learning,1,"Features, loss functions and optimization",Major,To script,Foundations & linear regression,PCCST503
+ML-1-05,S5,Machine Learning,1,Linear regression with one variable,Major,To script,Foundations & linear regression,PCCST503
+ML-1-06,S5,Machine Learning,1,Gradient descent,Major,To script,Foundations & linear regression,PCCST503
+ML-1-07,S5,Machine Learning,1,Multiple linear regression: the matrix method,Major,To script,Foundations & linear regression,PCCST503
+ML-2-01,S5,Machine Learning,2,Logistic regression,Major,To script,Classification & evaluation,PCCST503
+ML-2-02,S5,Machine Learning,2,Naive Bayes,Major,To script,Classification & evaluation,PCCST503
+ML-2-03,S5,Machine Learning,2,K-nearest neighbours,Major,To script,Classification & evaluation,PCCST503
+ML-2-04,S5,Machine Learning,2,Decision trees: ID3,Major,To script,Classification & evaluation,PCCST503
+ML-2-05,S5,Machine Learning,2,"Overfitting, and Lasso and Ridge regularization",Major,To script,Classification & evaluation,PCCST503
+ML-2-06,S5,Machine Learning,2,"Train, validation and test splits",Major,To script,Classification & evaluation,PCCST503
+ML-2-07,S5,Machine Learning,2,"Precision, recall, accuracy and F-measure",Major,To script,Classification & evaluation,PCCST503
+ML-2-08,S5,Machine Learning,2,ROC curves and AUC,Major,To script,Classification & evaluation,PCCST503
+ML-2-09,S5,Machine Learning,2,"Regression metrics: MAE, RMSE, R-squared",Minor,To script,Classification & evaluation,PCCST503
+ML-3-01,S5,Machine Learning,3,Support vector machines: the maximum-margin idea,Major,To script,SVMs & neural networks,PCCST503
+ML-3-02,S5,Machine Learning,3,Kernels for non-linear SVMs,Major,To script,SVMs & neural networks,PCCST503
+ML-3-03,S5,Machine Learning,3,The perceptron,Major,To script,SVMs & neural networks,PCCST503
+ML-3-04,S5,Machine Learning,3,Multilayer feedforward networks,Major,To script,SVMs & neural networks,PCCST503
+ML-3-05,S5,Machine Learning,3,"Activation functions: sigmoid, tanh, ReLU",Major,To script,SVMs & neural networks,PCCST503
+ML-3-06,S5,Machine Learning,3,Backpropagation,Major,To script,SVMs & neural networks,PCCST503
+ML-4-01,S5,Machine Learning,4,Similarity measures for clustering,Minor,To script,"Clustering, dimensionality reduction & ensembles",PCCST503
+ML-4-02,S5,Machine Learning,4,Hierarchical (agglomerative) clustering,Major,To script,"Clustering, dimensionality reduction & ensembles",PCCST503
+ML-4-03,S5,Machine Learning,4,K-means clustering,Major,To script,"Clustering, dimensionality reduction & ensembles",PCCST503
+ML-4-04,S5,Machine Learning,4,Principal component analysis (PCA),Major,To script,"Clustering, dimensionality reduction & ensembles",PCCST503
+ML-4-05,S5,Machine Learning,4,Multidimensional scaling,Minor,To script,"Clustering, dimensionality reduction & ensembles",PCCST503
+ML-4-06,S5,Machine Learning,4,Ensembles: bagging and boosting,Major,To script,"Clustering, dimensionality reduction & ensembles",PCCST503
+ML-4-07,S5,Machine Learning,4,Bootstrapping and cross-validation,Major,To script,"Clustering, dimensionality reduction & ensembles",PCCST503
+ML-4-08,S5,Machine Learning,4,The bias-variance tradeoff,Major,To script,"Clustering, dimensionality reduction & ensembles",PCCST503
+MC-1-01,S5,Microcontrollers,1,Embedded systems and where they're used,Major,To script,Embedded systems & ARM Cortex-M,PBCST504
+MC-1-02,S5,Microcontrollers,1,Embedded C,Minor,To script,Embedded systems & ARM Cortex-M,PBCST504
+MC-1-03,S5,Microcontrollers,1,Microcontroller vs microprocessor,Major,To script,Embedded systems & ARM Cortex-M,PBCST504
+MC-1-04,S5,Microcontrollers,1,The ARM Cortex-M family and Armv8-M,Major,To script,Embedded systems & ARM Cortex-M,PBCST504
+MC-1-05,S5,Microcontrollers,1,"Cortex-M registers, memory and bus architecture",Major,To script,Embedded systems & ARM Cortex-M,PBCST504
+MC-2-01,S5,Microcontrollers,2,The STM32 family and low-power modes,Minor,To script,"STM32 interfacing, ADC, timers & interrupts",PBCST504
+MC-2-02,S5,Microcontrollers,2,IDE and HAL: programming an STM32,Minor,To script,"STM32 interfacing, ADC, timers & interrupts",PBCST504
+MC-2-03,S5,Microcontrollers,2,"Interfacing LEDs, seven-segment displays and relays",Major,To script,"STM32 interfacing, ADC, timers & interrupts",PBCST504
+MC-2-04,S5,Microcontrollers,2,Interfacing LCDs and keypads,Major,To script,"STM32 interfacing, ADC, timers & interrupts",PBCST504
+MC-2-05,S5,Microcontrollers,2,ADC: reading sensors,Major,To script,"STM32 interfacing, ADC, timers & interrupts",PBCST504
+MC-2-06,S5,Microcontrollers,2,DAC: generating a sine wave,Minor,To script,"STM32 interfacing, ADC, timers & interrupts",PBCST504
+MC-2-07,S5,Microcontrollers,2,Interrupts,Major,To script,"STM32 interfacing, ADC, timers & interrupts",PBCST504
+MC-2-08,S5,Microcontrollers,2,"Timers, counters and a real-time clock",Major,To script,"STM32 interfacing, ADC, timers & interrupts",PBCST504
+MC-3-01,S5,Microcontrollers,3,Serial communication: USART,Major,To script,Serial communication,PBCST504
+MC-3-02,S5,Microcontrollers,3,I2C,Major,To script,Serial communication,PBCST504
+MC-3-03,S5,Microcontrollers,3,SPI,Major,To script,Serial communication,PBCST504
+MC-3-04,S5,Microcontrollers,3,CAN bus,Major,To script,Serial communication,PBCST504
+MC-3-05,S5,Microcontrollers,3,USB HID: emulating a keyboard or mouse,Minor,To script,Serial communication,PBCST504
+MC-4-01,S5,Microcontrollers,4,IoT architecture,Major,To script,"IoT, wireless & RTOS",PBCST504
+MC-4-02,S5,Microcontrollers,4,MQTT and CoAP,Major,To script,"IoT, wireless & RTOS",PBCST504
+MC-4-03,S5,Microcontrollers,4,IoT security and ARM TrustZone,Minor,To script,"IoT, wireless & RTOS",PBCST504
+MC-4-04,S5,Microcontrollers,4,"Wireless: GSM, Bluetooth and LoRa",Major,To script,"IoT, wireless & RTOS",PBCST504
+MC-4-05,S5,Microcontrollers,4,FreeRTOS: tasks and scheduling,Major,To script,"IoT, wireless & RTOS",PBCST504
+MC-4-06,S5,Microcontrollers,4,"FreeRTOS: queues, semaphores and timers",Major,To script,"IoT, wireless & RTOS",PBCST504
+MC-4-07,S5,Microcontrollers,4,Code optimization and debugging,Minor,To script,"IoT, wireless & RTOS",PBCST504
+CD-1-01,S6,Compiler Design,1,"What a compiler does: front end, optimizer, back end",Major,To script,Introduction & scanning,PCCST601
+CD-1-02,S6,Compiler Design,1,Recognizing words: regular expressions and automata,Major,To script,Introduction & scanning,PCCST601
+CD-1-03,S6,Compiler Design,1,Building a scanner,Major,To script,Introduction & scanning,PCCST601
+CD-1-04,S6,Compiler Design,1,Lex: generating a scanner,Minor,To script,Introduction & scanning,PCCST601
+CD-2-01,S6,Compiler Design,2,Expressing syntax with grammars,Major,To script,Top-down parsing,PCCST601
+CD-2-02,S6,Compiler Design,2,Eliminating left recursion,Major,To script,Top-down parsing,PCCST601
+CD-2-03,S6,Compiler Design,2,Left factoring,Major,To script,Top-down parsing,PCCST601
+CD-2-04,S6,Compiler Design,2,Recursive descent parsers,Major,To script,Top-down parsing,PCCST601
+CD-2-05,S6,Compiler Design,2,FIRST and FOLLOW sets,Major,To script,Top-down parsing,PCCST601
+CD-2-06,S6,Compiler Design,2,LL(1) parsing tables,Major,To script,Top-down parsing,PCCST601
+CD-3-01,S6,Compiler Design,3,Shift-reduce parsing,Major,To script,Bottom-up parsing & intermediate code,PCCST601
+CD-3-02,S6,Compiler Design,3,LR(1) parsing,Major,To script,Bottom-up parsing & intermediate code,PCCST601
+CD-3-03,S6,Compiler Design,3,"Building LR(1) tables, and table conflicts",Major,To script,Bottom-up parsing & intermediate code,PCCST601
+CD-3-04,S6,Compiler Design,3,YACC: building a calculator,Minor,To script,Bottom-up parsing & intermediate code,PCCST601
+CD-3-05,S6,Compiler Design,3,Intermediate representations: syntax trees and graphs,Major,To script,Bottom-up parsing & intermediate code,PCCST601
+CD-3-06,S6,Compiler Design,3,Three-address code,Major,To script,Bottom-up parsing & intermediate code,PCCST601
+CD-3-07,S6,Compiler Design,3,Syntax-directed translation,Major,To script,Bottom-up parsing & intermediate code,PCCST601
+CD-4-01,S6,Compiler Design,4,Code shape: arithmetic and boolean expressions,Major,To script,Code generation & optimization,PCCST601
+CD-4-02,S6,Compiler Design,4,"Code shape: if, loops and case statements",Major,To script,Code generation & optimization,PCCST601
+CD-4-03,S6,Compiler Design,4,Code shape: procedure calls,Minor,To script,Code generation & optimization,PCCST601
+CD-4-04,S6,Compiler Design,4,Local optimization: value numbering,Major,To script,Code generation & optimization,PCCST601
+CD-4-05,S6,Compiler Design,4,Tree-height balancing,Minor,To script,Code generation & optimization,PCCST601
+CD-4-06,S6,Compiler Design,4,Regional optimization: superlocal value numbering and loop unrolling,Major,To script,Code generation & optimization,PCCST601
+CD-4-07,S6,Compiler Design,4,Global optimization: live variables and code placement,Major,To script,Code generation & optimization,PCCST601
+ACS-1-01,S6,Advanced Computing Systems,1,HPC vs HTC,Major,To script,Distributed system models,PCCST602
+ACS-1-02,S6,Advanced Computing Systems,1,"Centralized, parallel, distributed and cloud computing",Major,To script,Distributed system models,PCCST602
+ACS-1-03,S6,Advanced Computing Systems,1,IoT and cyber-physical systems,Minor,To script,Distributed system models,PCCST602
+ACS-1-04,S6,Advanced Computing Systems,1,"Multicore CPUs, multithreading and GPUs",Major,To script,Distributed system models,PCCST602
+ACS-1-05,S6,Advanced Computing Systems,1,"Clusters, grids, P2P systems and clouds",Major,To script,Distributed system models,PCCST602
+ACS-2-01,S6,Advanced Computing Systems,2,Cluster design goals and architecture,Major,To script,Computer clusters,PCCST602
+ACS-2-02,S6,Advanced Computing Systems,2,High availability and fault tolerance,Major,To script,Computer clusters,PCCST602
+ACS-2-03,S6,Advanced Computing Systems,2,GPU clusters,Minor,To script,Computer clusters,PCCST602
+ACS-2-04,S6,Advanced Computing Systems,2,Single system image,Major,To script,Computer clusters,PCCST602
+ACS-2-05,S6,Advanced Computing Systems,2,Checkpointing and recovery,Major,To script,Computer clusters,PCCST602
+ACS-2-06,S6,Advanced Computing Systems,2,"Job scheduling, management and migration",Major,To script,Computer clusters,PCCST602
+ACS-3-01,S6,Advanced Computing Systems,3,"What virtualization is, and its levels",Major,To script,Virtualization,PCCST602
+ACS-3-02,S6,Advanced Computing Systems,3,Hypervisors: VMM design requirements,Major,To script,Virtualization,PCCST602
+ACS-3-03,S6,Advanced Computing Systems,3,OS-level virtualization,Minor,To script,Virtualization,PCCST602
+ACS-3-04,S6,Advanced Computing Systems,3,"CPU, memory and I/O virtualization",Major,To script,Virtualization,PCCST602
+ACS-3-05,S6,Advanced Computing Systems,3,Virtual clusters,Minor,To script,Virtualization,PCCST602
+ACS-3-06,S6,Advanced Computing Systems,3,Live VM migration,Major,To script,Virtualization,PCCST602
+ACS-4-01,S6,Advanced Computing Systems,4,"Private, public and hybrid clouds",Major,To script,"Cloud, microservices & containers",PCCST602
+ACS-4-02,S6,Advanced Computing Systems,4,"IaaS, PaaS and SaaS",Major,To script,"Cloud, microservices & containers",PCCST602
+ACS-4-03,S6,Advanced Computing Systems,4,Cloud design goals and cost models,Minor,To script,"Cloud, microservices & containers",PCCST602
+ACS-4-04,S6,Advanced Computing Systems,4,Microservices: pros and cons,Major,To script,"Cloud, microservices & containers",PCCST602
+ACS-4-05,S6,Advanced Computing Systems,4,"Service discovery, API gateways and registries",Major,To script,"Cloud, microservices & containers",PCCST602
+ACS-4-06,S6,Advanced Computing Systems,4,Containers vs virtual machines,Major,To script,"Cloud, microservices & containers",PCCST602
+ACS-4-07,S6,Advanced Computing Systems,4,Docker and its architecture,Major,To script,"Cloud, microservices & containers",PCCST602
+CS-1-01,S6,Fundamentals of Cyber Security,1,Threats to information systems,Major,To script,Information security & vulnerabilities,PBCST604
+CS-1-02,S6,Fundamentals of Cyber Security,1,Cyber security and risk analysis,Major,To script,Information security & vulnerabilities,PBCST604
+CS-1-03,S6,Fundamentals of Cyber Security,1,Reconnaissance,Minor,To script,Information security & vulnerabilities,PBCST604
+CS-1-04,S6,Fundamentals of Cyber Security,1,Buffer and stack overflows,Major,To script,Information security & vulnerabilities,PBCST604
+CS-1-05,S6,Fundamentals of Cyber Security,1,Format string vulnerabilities,Minor,To script,Information security & vulnerabilities,PBCST604
+CS-1-06,S6,Fundamentals of Cyber Security,1,Vulnerability assessment and penetration testing,Major,To script,Information security & vulnerabilities,PBCST604
+CS-2-01,S6,Fundamentals of Cyber Security,2,SQL injection,Major,To script,Web & email security,PBCST604
+CS-2-02,S6,Fundamentals of Cyber Security,2,Cross-site scripting (XSS),Major,To script,Web & email security,PBCST604
+CS-2-03,S6,Fundamentals of Cyber Security,2,Cross-site request forgery (CSRF),Major,To script,Web & email security,PBCST604
+CS-2-04,S6,Fundamentals of Cyber Security,2,DNS attacks and DNSSEC,Major,To script,Web & email security,PBCST604
+CS-2-05,S6,Fundamentals of Cyber Security,2,Web security testing tools,Minor,To script,Web & email security,PBCST604
+CS-2-06,S6,Fundamentals of Cyber Security,2,Email risks and safe email practices,Major,To script,Web & email security,PBCST604
+CS-3-01,S6,Fundamentals of Cyber Security,3,DoS and DDoS attacks,Major,To script,Network security,PBCST604
+CS-3-02,S6,Fundamentals of Cyber Security,3,ARP spoofing,Major,To script,Network security,PBCST604
+CS-3-03,S6,Fundamentals of Cyber Security,3,Session hijacking,Major,To script,Network security,PBCST604
+CS-3-04,S6,Fundamentals of Cyber Security,3,"Traffic interception: flooding, DHCP redirection, ICMP",Minor,To script,Network security,PBCST604
+CS-3-05,S6,Fundamentals of Cyber Security,3,Port scanning,Major,To script,Network security,PBCST604
+CS-3-06,S6,Fundamentals of Cyber Security,3,Traffic analysis and filtering,Minor,To script,Network security,PBCST604
+CS-4-01,S6,Fundamentals of Cyber Security,4,Windows security: attacks and authentication,Major,To script,System security,PBCST604
+CS-4-02,S6,Fundamentals of Cyber Security,4,"Windows access control, patches and firewall",Major,To script,System security,PBCST604
+CS-4-03,S6,Fundamentals of Cyber Security,4,Linux security: attacks and physical security,Major,To script,System security,PBCST604
+CS-4-04,S6,Fundamentals of Cyber Security,4,"Linux authentication, configuration control and patches",Major,To script,System security,PBCST604
+CS-4-05,S6,Fundamentals of Cyber Security,4,SELinux,Minor,To script,System security,PBCST604
